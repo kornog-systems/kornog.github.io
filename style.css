@@ -225,9 +225,9 @@ nav a:hover { color: var(--white); background: rgba(255,255,255,.08); }
 
 .hero-media    { display: flex; justify-content: center; align-items: center; }
 .hero-mockup   {
-  max-width: 100%; max-height: 540px; object-fit: contain;
-  border-radius: 18px;
-  box-shadow: var(--shadow-lg);
+  max-width: 100%; width: 100%; object-fit: contain;
+  border-radius: 12px;
+  box-shadow: var(--shadow-md);
 }
 .hero-placeholder {
   width: 100%; max-width: 400px; aspect-ratio: 9/16;
