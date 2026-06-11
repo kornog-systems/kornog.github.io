@@ -118,13 +118,13 @@ p  { line-height: 1.7; }
 .header {
   position: fixed; top: 0; left: 0; right: 0;
   height: var(--header-h);
-  background: rgba(7,15,30,.97);
+  background: var(--white);
   backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px);
   z-index: 1000;
-  border-bottom: 1px solid rgba(255,255,255,.06);
+  border-bottom: 1px solid var(--border);
   transition: box-shadow var(--transition);
 }
-.header.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,.3); }
+.header.scrolled { box-shadow: 0 2px 12px rgba(10,30,60,.08); }
 
 .header-inner { display: flex; align-items: center; height: 100%; gap: 1.5rem; }
 
@@ -143,11 +143,11 @@ p  { line-height: 1.7; }
 
 nav { display: flex; align-items: center; gap: .1rem; margin: 0 auto; }
 nav a {
-  color: rgba(255,255,255,.65); font-size: .875rem; font-weight: 500;
+  color: var(--text-muted); font-size: .875rem; font-weight: 500;
   padding: .4rem .7rem; border-radius: 6px;
   transition: color var(--transition), background var(--transition);
 }
-nav a:hover { color: var(--white); background: rgba(255,255,255,.08); }
+nav a:hover { color: var(--text); background: var(--gray-50); }
 
 .header-cta { flex-shrink: 0; }
 
@@ -157,7 +157,7 @@ nav a:hover { color: var(--white); background: rgba(255,255,255,.08); }
 }
 .hamburger span {
   display: block; width: 22px; height: 2px;
-  background: var(--white); border-radius: 2px;
+  background: var(--text); border-radius: 2px;
   transition: transform var(--transition), opacity var(--transition);
 }
 .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
@@ -167,15 +167,16 @@ nav a:hover { color: var(--white); background: rgba(255,255,255,.08); }
 .mobile-nav {
   display: none; flex-direction: column; gap: .2rem;
   position: fixed; top: var(--header-h); left: 0; right: 0;
-  background: var(--navy-dark); border-bottom: 1px solid rgba(255,255,255,.08);
+  background: var(--white); border-bottom: 1px solid var(--border);
+  box-shadow: 0 8px 24px rgba(10,30,60,.08);
   padding: 1.25rem 1.5rem 1.5rem; z-index: 999;
 }
 .mobile-nav.open { display: flex; }
 .mobile-nav a {
-  color: rgba(255,255,255,.75); font-size: .95rem; font-weight: 500;
+  color: var(--text-muted); font-size: .95rem; font-weight: 500;
   padding: .7rem 1rem; border-radius: 8px; display: block;
 }
-.mobile-nav a:hover { background: rgba(255,255,255,.08); color: var(--white); }
+.mobile-nav a:hover { background: var(--gray-50); color: var(--text); }
 .mobile-nav .btn { margin-top: .75rem; justify-content: center; }
 
 /* ────────────────────────────────────────
