@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Politique de confidentialité — Kornog</title>
+  <meta name="description"
+        content="Politique de confidentialité de l'application Kornog. Données utilisées, localisation GPS, historique de navigation et droits de l'utilisateur.">
+  <link rel="icon" type="image/png" href="assets/Images/Kornog%20icone.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ══════════════════════════════════════
+     HEADER
+══════════════════════════════════════ -->
+<header class="header" id="header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo" aria-label="Kornog — Accueil">
+      <img src="assets/Images/icone+nom.png" alt="Kornog"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+      <span class="logo-fallback" style="display:none">
+        <span class="logo-fallback-icon">⚓</span>Kornog
+      </span>
+    </a>
+    <nav aria-label="Navigation principale">
+      <a href="index.html#fonctionnalites">Fonctionnalités</a>
+      <a href="index.html#telechargements">Téléchargements</a>
+      <a href="index.html#projet">Projet</a>
+      <a href="legal.html">Légal</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <div class="header-cta">
+      <a href="index.html#telechargements" class="btn btn--primary btn--sm">Télécharger</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobile-nav">
+  <a href="index.html#fonctionnalites">Fonctionnalités</a>
+  <a href="index.html#telechargements">Téléchargements</a>
+  <a href="index.html#projet">Projet</a>
+  <a href="legal.html">Légal</a>
+  <a href="index.html#contact">Contact</a>
+  <a href="index.html#telechargements" class="btn btn--primary">Télécharger</a>
+</div>
+
+<!-- ══════════════════════════════════════
+     PAGE HEADER
+══════════════════════════════════════ -->
+<div class="page-header">
+  <div class="container">
+    <a href="legal.html" class="back-link" style="color:rgba(255,255,255,.55)">← Documents légaux</a>
+    <span class="badge badge--white">Vie privée</span>
+    <h1>Politique de confidentialité</h1>
+    <p>Dernière mise à jour : 01/06/2025</p>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     CONTENU
+══════════════════════════════════════ -->
+<article class="prose">
+
+  <div class="notice">
+    Ce document est un résumé de la politique de confidentialité de l'application Kornog.
+    Le document complet et juridiquement détaillé est disponible ici :
+    <a href="assets/legal/FR/RGPD.html">Politique de confidentialité complète (FR)</a>
+    &mdash; <a href="assets/legal/EN/kornog_privacy_policy_en.html">Privacy Policy (EN)</a>.
+  </div>
+
+  <h2>Principe fondamental</h2>
+  <p>
+    Kornog a été conçu selon un principe simple : <strong>les données de navigation restent
+    autant que possible sur l'appareil de l'utilisateur.</strong>
+  </p>
+  <p>
+    Kornog ne crée pas de compte utilisateur, ne collecte pas d'adresse e-mail, ne collecte pas
+    de données de paiement et ne transmet pas l'historique de navigation à des serveurs distants.
+  </p>
+
+  <h2>1. Responsable du traitement</h2>
+  <p>
+    <!-- TODO : Mettre à jour si la structure juridique évolue -->
+    MOQUET Félicien<br>
+    France<br>
+    <a href="mailto:kornog@mailo.com">kornog@mailo.com</a>
+  </p>
+
+  <h2>2. Données utilisées par l'application</h2>
+  <p>Kornog peut utiliser les données suivantes, nécessaires à son fonctionnement :</p>
+  <ul>
+    <li>la position GPS de l'appareil (si l'utilisateur l'autorise) ;</li>
+    <li>les données de navigation affichées ou générées dans l'application ;</li>
+    <li>les routes, traces, marques et waypoints créés par l'utilisateur ;</li>
+    <li>les données reçues d'équipements connectés localement (passerelle NMEA, Wi-Fi local) ;</li>
+    <li>les fichiers de polaires importés depuis le stockage de l'appareil ;</li>
+    <li>les données nécessaires au téléchargement de fichiers météo GRIB ;</li>
+    <li>les données nécessaires à l'affichage de cartes ou de tuiles cartographiques.</li>
+  </ul>
+  <p>
+    Ces données sont utilisées pour fournir les fonctionnalités principales de Kornog.
+    Dans la mesure du possible, elles sont traitées <strong>localement</strong> sur l'appareil.
+  </p>
+
+  <h2>3. Localisation GPS</h2>
+  <p>
+    Kornog utilise la position GPS de l'appareil pour afficher la position du bateau
+    et fournir les informations utiles à la navigation.
+  </p>
+  <p>
+    La position GPS est traitée <strong>localement</strong> sur l'appareil de l'utilisateur.
+    Kornog ne transmet pas la position GPS à ses propres serveurs.
+  </p>
+  <p>
+    Lorsqu'une session de navigation, un suivi de route ou une alarme est active,
+    l'application peut continuer à utiliser la localisation en arrière-plan.
+    L'utilisateur peut arrêter ce suivi à tout moment depuis l'application
+    ou désactiver l'autorisation de localisation dans les paramètres de son appareil.
+  </p>
+  <p>
+    Certaines fonctionnalités (téléchargement de cartes, météo) peuvent nécessiter
+    des requêtes réseau qui révèlent indirectement une zone géographique au fournisseur
+    externe concerné.
+  </p>
+
+  <h2>4. Historique, traces et routes</h2>
+  <p>
+    Les routes, traces, waypoints et paramètres de navigation sont enregistrés
+    <strong>localement sur l'appareil</strong>.
+    Kornog n'y a pas accès et ne les synchronise pas avec un serveur distant.
+  </p>
+  <p>
+    L'utilisateur peut supprimer ces données depuis l'application ou via les paramètres
+    de son appareil (suppression des données de l'application).
+  </p>
+
+  <h2>5. Données NMEA, AIS et capteurs locaux</h2>
+  <p>
+    Les données reçues depuis des équipements à bord (passerelle NMEA, Wi-Fi, Signal K, etc.)
+    sont traitées localement pour l'affichage.
+    Kornog ne transmet pas ces données à l'extérieur du réseau local du bateau.
+  </p>
+  <p>
+    Les fonctionnalités disponibles dépendent des équipements installés à bord
+    et des données effectivement transmises par la passerelle.
+  </p>
+
+  <h2>6. Données météo et cartographiques</h2>
+  <p>
+    Le téléchargement de données météo GRIB ou de tuiles cartographiques nécessite
+    une connexion Internet. Ces échanges sont réalisés directement avec les fournisseurs
+    externes concernés (ex. : Copernicus, OpenStreetMap, OpenSeaMap, etc.)
+    et sont soumis à leurs propres conditions d'utilisation.
+  </p>
+
+  <h2>7. Diagnostics et données techniques</h2>
+  <p>
+    Certaines données techniques (journaux d'erreurs, informations de diagnostic)
+    peuvent être utilisées localement pour le fonctionnement, le débogage
+    ou l'amélioration de l'application.
+    <!-- TODO : Préciser ici si des données de crash ou d'utilisation sont transmises
+         à un service tiers (ex. : Firebase Crashlytics) et le cas échéant, le nommer. -->
+  </p>
+
+  <h2>8. Droits de l'utilisateur</h2>
+  <p>
+    Conformément au Règlement Général sur la Protection des Données (RGPD),
+    l'utilisateur dispose d'un droit d'accès, de rectification, de suppression
+    et de limitation du traitement de ses données personnelles.
+  </p>
+  <p>
+    Pour exercer ces droits ou pour toute question relative à la protection
+    des données personnelles, contacter :
+    <a href="mailto:kornog@mailo.com">kornog@mailo.com</a>
+  </p>
+
+  <h2>9. Avertissement navigation</h2>
+  <p>
+    Kornog est un outil d'aide à la navigation. Il ne remplace pas les instruments
+    de navigation obligatoires, les cartes réglementaires ni le jugement du skipper.
+    Les fonctionnalités disponibles peuvent dépendre du matériel installé à bord.
+  </p>
+
+  <div class="notice">
+    <strong>Document complet.</strong>
+    Ce résumé ne se substitue pas au document complet. Pour la version juridiquement
+    complète et détaillée :
+    <a href="assets/legal/FR/RGPD.html">Politique de confidentialité complète (FR)</a> —
+    <a href="assets/legal/EN/kornog_privacy_policy_en.html">Full Privacy Policy (EN)</a>.
+  </div>
+
+  <p style="font-size:.8rem; color:var(--text-muted); margin-top:2rem;">
+    <!-- TODO : Mettre à jour la date à chaque modification substantielle -->
+    Dernière mise à jour : 01/06/2025<br>
+    MOQUET Félicien — kornog@mailo.com — France
+  </p>
+
+</article>
+
+<!-- Footer minimal -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none; padding-top:0;">
+      <span>© 2025 Kornog — <a href="mailto:kornog@mailo.com" style="color:rgba(255,255,255,.55)">kornog@mailo.com</a></span>
+      <div style="display:flex;gap:1.5rem;">
+        <a href="legal.html" style="color:rgba(255,255,255,.55); font-size:.82rem;">Documents légaux</a>
+        <a href="index.html" style="color:rgba(255,255,255,.55); font-size:.82rem;">← Accueil</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

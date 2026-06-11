@@ -1,0 +1,378 @@
+Kornog Privacy Policy
+
+Last updated: 1 June 2025
+
+Kornog is a navigation assistance application intended for recreational boaters and sailing boat users.
+
+This Privacy Policy explains which data may be used by the application, for what purpose, where it is stored, and what rights the user has.
+
+Kornog has been designed according to a simple principle: navigation data should remain on the user's device as much as possible.
+
+Kornog does not create a user account specific to the application, does not collect email addresses, does not collect payment data, and does not transmit navigation history to Kornog servers.
+
+
+1. Data Controller
+
+The data controller is:
+
+MOQUET Félicien
+kornog@mailo.com
+FRANCE
+
+For any question relating to the protection of personal data, you may contact us at the following address:
+
+kornog@mailo.com
+
+
+2. Data Used by the Application
+
+Kornog may use certain data necessary for its operation, including:
+
+• the device's GPS position;
+• navigation data displayed or generated in the application;
+• routes, passages, tracks, marks or waypoints created by the user;
+• associated navigation settings;
+• data from locally connected equipment, for example via a NMEA network or a local Wi-Fi network;
+• data from local sensors, onboard instruments or compatible gateways;
+• boat polar files imported by the user from the storage of their device;
+• data necessary for downloading GRIB weather files;
+• data necessary for displaying maps or map tiles.
+
+This data is used to provide Kornog's main features: displaying the boat's position, viewing maps, preparing navigation, route monitoring, using weather data, calculations related to sailing boat performance, and decision support.
+
+As far as possible, this data is processed locally on the user's device.
+
+
+3. GPS Position
+
+Kornog uses the device's GPS position in order to display the boat's position on the map and provide useful navigation information.
+
+The GPS position is processed locally on the user's device.
+
+Kornog does not transmit the GPS position to Kornog servers.
+
+When the user activates a navigation session, route monitoring, track recording or a navigation alert, Kornog may continue to use the device's position when the application is not displayed on screen.
+
+This may occur when the user locks the screen, returns to the home screen or uses another application while a navigation session is in progress.
+
+This use makes it possible to maintain tracking of the boat's position, record the navigation track and provide the alerts required for the active session to function.
+
+Kornog does not use background location permanently. Background location is used only during a user-activated navigation feature that requires continuous tracking.
+
+The user may stop tracking at any time from within the application. The user may also disable location permission in the settings of their device.
+
+When certain features require external data to be downloaded, for example maps or weather files, the application may make network requests. These requests may indirectly reveal a requested geographical area to the external provider concerned, for example when a map is loaded around the displayed position or when a weather area is selected.
+
+
+4. Navigation History, Tracks, Routes and Passages
+
+Kornog may allow the user to create, display or locally save navigation items, including:
+
+◇ routes;
+◇ passages;
+◇ tracks;
+◇ waypoints;
+◇ marks or navigation points;
+◇ associated navigation settings.
+
+This information is stored locally on the user's device.
+
+Kornog does not have access to this information and does not synchronize it with a remote server.
+
+The user may delete this data using the features provided in the application or by deleting the application data from the settings of their device.
+
+
+5. NMEA, AIS or Local Sensor Data
+
+Kornog may receive and display data from equipment present onboard, for example via a local network, Wi-Fi, UDP, NMEA 0183, NMEA 2000 or another compatible gateway.
+
+Depending on the connected equipment, this data may include:
+
+◇ position;
+◇ heading;
+◇ speed;
+◇ wind;
+◇ depth;
+◇ AIS data;
+◇ information from onboard instruments.
+
+This data is used locally for navigation display and calculations.
+
+Kornog does not transmit this data to Kornog servers.
+
+The reliability of this data depends on the connected equipment, its configuration, the quality of the local network and reception conditions.
+
+
+6. Boat Polar Files Imported by the User
+
+Kornog may allow the user to import a boat polar file from the storage of their device.
+
+These files may contain sailing boat performance data, for example theoretical speeds depending on wind angle and wind strength, or other information useful for navigation calculations and decision support.
+
+The polar file is voluntarily selected by the user using the file picker of their device.
+
+Kornog does not freely access all files on the device. The application uses only the file explicitly selected by the user for import.
+
+Imported polar data is processed locally on the user's device.
+
+Kornog does not transmit polar files to Kornog servers.
+
+When a new polar file is imported, it may replace the polar data previously saved in the application.
+
+The user is responsible for the accuracy, consistency and suitability of the imported polar file for their actual boat.
+
+Kornog does not guarantee that the data contained in an imported polar file is accurate, complete or suitable for real navigation conditions.
+
+The user may delete this data by using the features provided in the application, by deleting the application data from the settings of their device, or by uninstalling the application.
+
+
+7. Downloading GRIB Weather Files
+
+Kornog may allow the download of weather or oceanographic data in GRIB format or an equivalent format from the NOAA CoastWatch ERDDAP service.
+
+Provider used:
+
+NOAA CoastWatch ERDDAP — Environmental Research Division / NOAA Fisheries / Southwest Fisheries Science Center.
+
+Service used:
+
+https://coastwatch.pfeg.noaa.gov/erddap
+
+When a user downloads weather or oceanographic data, the application contacts the provider's servers in order to retrieve the requested data.
+
+This request may contain technical information necessary for the service to operate, including:
+
+◇ the user's IP address;
+◇ the date and time of the request;
+◇ the requested geographical area;
+◇ download parameters;
+◇ technical information necessary for the operation of the API.
+
+Kornog does not receive this data on its own servers and does not associate it with a user account.
+
+The external provider may process certain information in accordance with its own Privacy Policy.
+
+The applicable Privacy Policy is available at the following addresses:
+
+https://coastwatch.pfeg.noaa.gov/erddap/legal.html#privacyPolicy
+https://www.noaa.gov/protecting-your-privacy
+
+The legal notices and disclaimers for the ERDDAP service are available at the following address:
+
+https://coastwatch.pfeg.noaa.gov/erddap/legal.html
+
+Certain data accessible via ERDDAP may be subject to licenses, limitations or usage restrictions specific to each dataset.
+
+The user and Kornog must refer to the metadata of the relevant dataset, in particular to the “license” field where available.
+
+
+8. Maps and Map Data
+
+Kornog may display maps or map data from external services, including OpenSeaMap, OpenStreetMap or other map providers.
+
+When maps are loaded, the application may contact external servers in order to download the tiles or data required for display.
+
+These services may receive technical information, including:
+
+◇ IP address;
+◇ date and time of the request;
+◇ requested map tiles;
+◇ approximate geographical area displayed;
+◇ technical information related to the device or the application.
+
+Kornog does not receive this information from these services, unless otherwise stated.
+
+OpenStreetMap data requires appropriate attribution. OpenStreetMap states that its data is provided by OpenStreetMap and its contributors under an open license, with attribution.
+
+Attribution to be displayed in the application:
+
+© OpenStreetMap contributors
+© OpenSeaMap contributors, where applicable
+
+Map provider used:
+
+OpenStreetMap / OpenSeaMap
+
+Service used:
+
+OpenStreetMap for general map data.
+OpenSeaMap for nautical data and layers when they are displayed in the application.
+
+Link to terms of use / usage policy:
+
+OpenStreetMap — Tile Usage Policy:
+https://operations.osmfoundation.org/policies/tiles/
+
+OpenStreetMap — License and attribution:
+https://osmfoundation.org/wiki/Licence/Attribution_Guidelines
+
+OpenSeaMap — project website:
+https://www.openseamap.org/
+
+Link to the Privacy Policy:
+
+OpenStreetMap Foundation — Privacy Policy:
+https://osmfoundation.org/wiki/Privacy_Policy
+
+
+9. User Account
+
+Kornog does not provide a user account specific to the application.
+
+The application does not directly collect:
+
+◇ first name;
+◇ last name;
+◇ email address;
+◇ password;
+◇ phone number;
+◇ customer identifier.
+
+If the application is downloaded via Google Play, the App Store or another application store, certain information may be processed by the relevant platform, according to its own terms and its own Privacy Policy.
+
+Kornog does not have access to all data managed by these platforms.
+
+
+10. Payments
+
+Kornog does not directly collect payment data.
+
+If purchases, subscriptions or licenses are offered via Google Play, the App Store or another platform, payment is handled by the relevant platform.
+
+Kornog does not receive the user's full bank card information.
+
+
+11. No Sale of Data
+
+Kornog does not sell users' personal data.
+
+Kornog does not carry out advertising profiling based on GPS position, navigation history, polar files or navigation data.
+
+Kornog does not transmit navigation data to data brokers or advertising networks.
+
+
+12. Statistics, Analytics and Crash Reports
+
+As of the date of this Policy, Kornog [choose the correct option]:
+
+Option A — if no external tool is used:
+
+Kornog does not use any external audience analytics or crash reporting tool that transmits personal data to a third-party service.
+
+Option B — if an external tool is used:
+
+Kornog may use technical analytics or crash reporting tools in order to improve the stability, security and quality of the application.
+
+These tools may process certain technical information, for example:
+
+◇ device type;
+◇ operating system version;
+◇ application version;
+◇ date and time of the crash;
+◇ technical information necessary to diagnose the error.
+
+Kornog does not use these tools to track the user's navigation history, sell personal data or carry out advertising profiling.
+
+[Insert here the name of the provider used, its Privacy Policy and the data transmitted.]
+
+
+13. Permissions Requested by the Application
+
+Kornog may request certain permissions from the user.
+
+Location
+
+The location permission is used to display the boat's position, provide navigation features, and, when the user activates a navigation session, maintain navigation tracking while the application is not displayed on screen.
+
+Location access is limited to the needs of the application and to features activated by the user.
+
+When a navigation session, route monitoring, track recording or navigation alert is active, Kornog may continue to use location while the user locks the screen, returns to the home screen or uses another application.
+
+Kornog does not use location in the background permanently. Background location is used only during an active navigation feature initiated by the user.
+
+The user may stop tracking at any time from within the application and may disable location permission in the settings of their device.
+
+Network / Internet
+
+Network access is used to download resources necessary for the operation of certain features, including:
+
+◇ maps;
+◇ map tiles;
+◇ GRIB weather files;
+◇ external data necessary for the application.
+
+Local Network / Wi-Fi
+
+Access to the local network may be used to receive data from onboard equipment or navigation gateways.
+
+Files / Device Storage
+
+Access to files on the device may be used only when the user explicitly chooses a file to import, for example a polar file.
+
+Kornog does not freely access all files on the device.
+
+The application imports only the file selected by the user.
+
+Where the operating system allows it, Kornog prioritizes the use of the device's file picker in order to limit access only to the files chosen by the user.
+
+
+14. Retention Period
+
+Navigation data saved locally is retained on the device until the user deletes it.
+
+Imported polar files are retained locally on the device until they are replaced or deleted by the user, or until the application data is deleted.
+
+Kornog does not retain this data on its servers.
+
+External providers, for example map or weather services, may retain certain technical information according to their own retention rules.
+
+
+15. Deletion of Data
+
+The user may delete their local data:
+
+◇ using the deletion features provided in the application;
+◇ by deleting tracks, routes, passages, marks or waypoints;
+◇ by replacing or deleting imported polar files;
+◇ by deleting the application data from the settings of their device;
+◇ by uninstalling the application.
+
+Because Kornog cannot access data stored only on the device, a request sent to Kornog cannot remotely delete local data already present on the user's device.
+
+
+16. Security
+
+Kornog implements reasonable measures to limit the processing of personal data and avoid the unnecessary transmission of sensitive data.
+
+The application is designed to operate locally as much as possible.
+
+Polar files imported by the user are processed locally and are not transmitted to Kornog servers.
+
+The user remains responsible for the security of their device, operating system, backups, the files they import and their local network onboard.
+
+
+17. User Rights
+
+In accordance with the General Data Protection Regulation, the user may have rights over their personal data, including:
+
+◇ right of access;
+◇ right to rectification;
+◇ right to erasure;
+◇ right to object;
+◇ right to restriction of processing;
+◇ right to data portability, where applicable.
+
+Since Kornog does not collect navigation data on its servers, certain requests may only relate to any data actually held by Kornog.
+
+To exercise your rights, contact:
+
+kornog@mailo.com
+
+The user may also lodge a complaint with the competent supervisory authority, for example the CNIL in France.
+
+
+18. Changes to the Privacy Policy
+
+This Policy may be amended to reflect changes to the application, its features, its providers or applicable regulations.
+
+In the event of a significant change, Kornog may inform users by appropriate means.

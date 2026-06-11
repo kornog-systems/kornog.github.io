@@ -1,0 +1,20 @@
+Legal Notice
+
+Publisher
+
+Data Controller:
+Kornog / Félicien MOQUET
+
+Contact:
+kornog@mailo.com
+
+Country:
+France
+
+Intellectual Property
+
+The Kornog application and its own original elements are protected by intellectual property law.
+
+Maps, weather data, OpenStreetMap data, OpenSeaMap data and other external data remain subject to the licenses and terms of their respective providers.
+
+See section: LICENSES_AND_THIRD_PARTY_NOTICES.txt

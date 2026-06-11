@@ -1,0 +1,279 @@
+Conditions générales d’utilisation de Kornog
+
+Dernière mise à jour : 01/01/2026
+
+Les présentes conditions générales d’utilisation définissent les règles d’utilisation de l’application Kornog.
+
+En utilisant Kornog, l’utilisateur accepte les présentes conditions.
+
+
+1. Objet de l’application
+
+Kornog est une application d’aide à la navigation destinée aux plaisanciers, navigateurs et utilisateurs de voiliers.
+
+L’application peut proposer des fonctionnalités telles que :
+
+• affichage cartographique ;
+• positionnement GPS ;
+• préparation de route ;
+• suivi de parcours ;
+• affichage de données météo ;
+• affichage de fichiers GRIB ;
+• affichage de données issues d’instruments de bord ;
+• affichage de données AIS ou NMEA lorsque disponibles ;
+• aide à l’analyse de navigation ;
+• calculs liés à la navigation et à la performance du voilier ;
+• import et utilisation de fichiers de polaires fournis par l’utilisateur.
+
+
+2. Aide à la navigation uniquement
+
+Kornog est une aide à la navigation.
+
+Kornog ne remplace pas :
+
+◇ les cartes marines officielles ;
+◇ les documents nautiques réglementaires ;
+◇ les avis aux navigateurs ;
+◇ les instruments obligatoires à bord ;
+◇ la veille visuelle et auditive ;
+◇ l’expérience et le jugement du chef de bord ;
+◇ les règles internationales pour prévenir les abordages en mer ;
+◇ les obligations réglementaires applicables au navire et à son équipage.
+
+L’utilisateur reste seul responsable de sa navigation, de ses décisions, de sa route, de sa sécurité et de celle de son équipage.
+
+Kornog ne doit jamais être utilisé comme unique moyen de navigation.
+
+
+3. Absence de garantie nautique
+
+Les données affichées dans Kornog peuvent être incomplètes, imprécises, obsolètes ou indisponibles.
+
+Cela peut concerner notamment :
+
+◇ les cartes ;
+◇ les traits de côte ;
+◇ les données météo ;
+◇ les fichiers GRIB ;
+◇ les données AIS ;
+◇ les données NMEA ;
+◇ les données GPS ;
+◇ les informations de profondeur ;
+◇ les données de vent ;
+◇ les routes ou calculs produits par l’application ;
+◇ les fichiers de polaires importés par l’utilisateur ;
+◇ les calculs de performance ou d’aide à la décision basés sur ces données.
+
+L’utilisateur doit vérifier les informations avec des sources officielles et adaptées à la navigation envisagée.
+
+
+4. Cartes et données externes
+
+Kornog peut utiliser des données ou services externes, par exemple OpenSeaMap, OpenStreetMap ou des fournisseurs météo.
+
+Ces services peuvent être indisponibles, modifiés, limités ou interrompus.
+
+Kornog ne garantit pas la disponibilité permanente des services externes.
+
+L’utilisateur doit respecter les licences, conditions d’utilisation et attributions associées aux données affichées.
+
+Attribution indicative :
+
+© OpenStreetMap contributors  
+© OpenSeaMap contributors, le cas échéant
+
+
+5. Données météo et GRIB
+
+Les données météo et fichiers GRIB sont des prévisions.
+
+Elles peuvent être erronées, imprécises, incomplètes ou ne pas refléter les conditions réelles rencontrées en mer.
+
+L’utilisateur doit consulter les bulletins météo officiels et prendre en compte les conditions locales.
+
+Kornog ne garantit pas l’exactitude, la disponibilité, la fraîcheur ou l’adéquation des données météo téléchargées ou affichées.
+
+
+6. Fichiers de polaires importés par l’utilisateur
+
+Kornog peut permettre à l’utilisateur d’importer un fichier de polaires de bateau depuis son appareil.
+
+Ces fichiers peuvent être utilisés par l’application pour afficher ou calculer certaines informations liées à la performance théorique du voilier, par exemple selon l’angle du vent, la force du vent ou d’autres paramètres de navigation.
+
+L’utilisateur reconnaît que les fichiers de polaires peuvent être :
+
+◇ incomplets ;
+◇ imprécis ;
+◇ obsolètes ;
+◇ mal formatés ;
+◇ incompatibles avec l’application ;
+◇ inadaptés au bateau réellement utilisé ;
+◇ inadaptés aux conditions réelles de navigation.
+
+L’utilisateur est seul responsable :
+
+◇ du choix du fichier importé ;
+◇ de l’exactitude du fichier ;
+◇ de sa cohérence avec le bateau utilisé ;
+◇ de son adaptation à l’état réel du bateau, de ses voiles, de son chargement et des conditions de navigation ;
+◇ des décisions prises à partir des informations ou calculs issus de ce fichier.
+
+Kornog ne vérifie pas la validité nautique des fichiers de polaires importés.
+
+Kornog ne garantit pas que les performances calculées ou affichées à partir d’un fichier de polaires correspondent aux performances réelles du bateau.
+
+Les données issues d’un fichier de polaires ne sont qu’une indication théorique et ne doivent pas être utilisées comme seule base de décision en navigation.
+
+Lorsqu’un nouveau fichier de polaires est importé, il peut remplacer les polaires précédemment enregistrées dans l’application.
+
+L’utilisateur doit vérifier après import que les données affichées semblent cohérentes avant toute utilisation en navigation.
+
+
+7. Données GPS, NMEA, AIS et capteurs
+
+Kornog peut afficher des données issues de l’appareil ou d’équipements embarqués.
+
+Ces données peuvent être affectées par :
+
+◇ une mauvaise réception GPS ;
+◇ une erreur de capteur ;
+◇ une mauvaise configuration réseau ;
+◇ une perte de connexion ;
+◇ une latence ;
+◇ une donnée obsolète ;
+◇ une erreur de transmission ;
+◇ une incompatibilité matérielle ou logicielle.
+
+L’utilisateur doit vérifier la cohérence des informations affichées et ne pas se fier uniquement à l’application.
+
+Les données AIS, lorsqu’elles sont affichées, peuvent être incomplètes, retardées, absentes ou erronées.
+
+L’affichage de données AIS dans Kornog ne dispense pas l’utilisateur d’assurer une veille visuelle et auditive permanente.
+
+
+8. Utilisation en mer
+
+Avant toute navigation, l’utilisateur doit s’assurer que :
+
+◇ son appareil est chargé ;
+◇ l’application fonctionne correctement ;
+◇ les cartes nécessaires sont disponibles ;
+◇ les données météo ont été téléchargées et sont récentes ;
+◇ les instruments de bord fonctionnent ;
+◇ les fichiers importés, notamment les polaires, sont cohérents et adaptés ;
+◇ les moyens de navigation réglementaires sont disponibles ;
+◇ une solution de secours est prévue.
+
+Kornog ne doit pas être utilisé comme unique moyen de navigation.
+
+L’utilisateur doit toujours disposer de moyens alternatifs adaptés, notamment cartes officielles, instruments réglementaires, documents nautiques, moyens de communication et procédures de secours.
+
+
+9. Responsabilité de l’utilisateur
+
+L’utilisateur est responsable :
+
+◇ de l’utilisation de l’application ;
+◇ de la vérification des données affichées ;
+◇ de ses décisions de navigation ;
+◇ du respect de la réglementation maritime ;
+◇ de la sécurité du navire et de l’équipage ;
+◇ de la configuration de ses équipements ;
+◇ de la compatibilité de son matériel ;
+◇ des fichiers qu’il importe dans l’application ;
+◇ de l’interprétation des calculs ou informations fournis par Kornog.
+
+L’utilisateur s’engage à utiliser Kornog de manière prudente, raisonnable et conforme aux règles de sécurité maritime.
+
+
+10. Disponibilité de l’application
+
+Kornog est fourni en l’état.
+
+L’application peut contenir des erreurs, bugs ou limitations.
+
+Des interruptions peuvent survenir, notamment lors de mises à jour, de problèmes techniques, de changements de services externes ou de limitations imposées par des plateformes tierces.
+
+Kornog ne garantit pas que l’application sera disponible en permanence, sans erreur, sans interruption ou compatible avec tous les appareils, systèmes d’exploitation, équipements ou fichiers utilisés par l’utilisateur.
+
+
+11. Mises à jour
+
+Kornog peut être mis à jour afin d’ajouter, modifier ou supprimer certaines fonctionnalités.
+
+Certaines fonctionnalités peuvent évoluer, être suspendues ou nécessiter une version récente de l’application.
+
+L’utilisateur est invité à maintenir l’application à jour afin de bénéficier des dernières corrections, améliorations et évolutions disponibles.
+
+
+12. Propriété intellectuelle
+
+L’application Kornog, son interface, son code, ses textes, ses éléments graphiques, son nom et ses éléments distinctifs sont protégés par le droit de la propriété intellectuelle, sauf mention contraire.
+
+Les données externes, cartes, tuiles, données météo ou autres ressources utilisées dans l’application restent soumises aux droits et licences de leurs fournisseurs respectifs.
+
+Les fichiers importés par l’utilisateur, notamment les fichiers de polaires, restent sous la responsabilité de l’utilisateur.
+
+L’utilisateur doit s’assurer qu’il dispose des droits nécessaires pour utiliser les fichiers qu’il importe dans l’application.
+
+
+13. Interdictions
+
+L’utilisateur s’engage à ne pas :
+
+◇ utiliser Kornog d’une manière contraire à la loi ;
+◇ utiliser Kornog d’une manière contraire aux règles de sécurité maritime ;
+◇ tenter de perturber le fonctionnement de l’application ;
+◇ contourner les limitations techniques ;
+◇ extraire massivement des données externes via l’application ;
+◇ utiliser l’application d’une manière susceptible de nuire aux fournisseurs tiers ;
+◇ importer volontairement des fichiers malveillants, corrompus ou destinés à perturber l’application ;
+◇ présenter Kornog comme une source officielle de navigation maritime.
+
+
+14. Données personnelles
+
+L’utilisation de Kornog peut impliquer le traitement de certaines données, notamment des données de localisation, de navigation, de configuration, de fichiers importés ou de données issues d’équipements connectés.
+
+Les modalités de traitement de ces données sont décrites dans la politique de confidentialité de Kornog.
+
+L’utilisateur est invité à consulter cette politique afin de comprendre quelles données peuvent être utilisées, dans quel but, où elles sont stockées et quels sont ses droits.
+
+
+15. Limitation de responsabilité
+
+Dans la mesure permise par la loi applicable, Kornog ne pourra être tenu responsable des dommages résultant :
+
+◇ d’une mauvaise utilisation de l’application ;
+◇ d’une décision de navigation prise sur la base de l’application ;
+◇ d’une erreur ou absence de donnée ;
+◇ d’une donnée météo erronée ou obsolète ;
+◇ d’un fichier GRIB incomplet, indisponible ou incorrect ;
+◇ d’un fichier de polaires erroné, incomplet, obsolète, inadapté ou mal importé ;
+◇ d’un calcul de performance ou d’aide à la décision fondé sur des données incorrectes ;
+◇ d’une indisponibilité de service externe ;
+◇ d’une perte de connexion ;
+◇ d’un dysfonctionnement de l’appareil ;
+◇ d’une erreur de capteur ou d’instrument ;
+◇ d’un défaut de préparation de navigation ;
+◇ d’un non-respect des règles maritimes ;
+◇ d’une incompatibilité matérielle, logicielle ou de format de fichier.
+
+Cette clause ne limite pas les droits dont l’utilisateur bénéficie en vertu des dispositions légales impératives applicables.
+
+
+16. Modification des présentes conditions
+
+Kornog peut modifier les présentes conditions générales d’utilisation afin de tenir compte de l’évolution de l’application, de ses fonctionnalités, de ses fournisseurs, de son modèle économique ou de la réglementation applicable.
+
+La date de dernière mise à jour indique la version applicable des conditions.
+
+En cas de modification importante, Kornog pourra informer les utilisateurs par un moyen approprié.
+
+
+17. Contact
+
+Pour toute question concernant Kornog :
+
+kornog@mailo.com

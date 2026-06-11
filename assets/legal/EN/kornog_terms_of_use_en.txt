@@ -1,0 +1,279 @@
+Kornog Terms of Use
+
+Last updated: 1 January 2026
+
+These Terms of Use define the rules for using the Kornog application.
+
+By using Kornog, the user accepts these Terms.
+
+
+1. Purpose of the Application
+
+Kornog is a navigation assistance application intended for recreational boaters, navigators and sailing boat users.
+
+The application may offer features such as:
+
+• map display;
+• GPS positioning;
+• route planning;
+• passage tracking;
+• weather data display;
+• GRIB file display;
+• display of data from onboard instruments;
+• display of AIS or NMEA data where available;
+• navigation analysis assistance;
+• calculations related to navigation and sailing boat performance;
+• import and use of polar files provided by the user.
+
+
+2. Navigation Assistance Only
+
+Kornog is a navigation assistance tool.
+
+Kornog does not replace:
+
+◇ official nautical charts;
+◇ regulatory nautical documents;
+◇ notices to mariners;
+◇ mandatory onboard instruments;
+◇ visual and auditory watchkeeping;
+◇ the experience and judgement of the skipper;
+◇ the International Regulations for Preventing Collisions at Sea;
+◇ the regulatory obligations applicable to the vessel and its crew.
+
+The user remains solely responsible for their navigation, decisions, route, safety and the safety of their crew.
+
+Kornog must never be used as the sole means of navigation.
+
+
+3. No Nautical Warranty
+
+The data displayed in Kornog may be incomplete, inaccurate, outdated or unavailable.
+
+This may include, in particular:
+
+◇ maps;
+◇ coastlines;
+◇ weather data;
+◇ GRIB files;
+◇ AIS data;
+◇ NMEA data;
+◇ GPS data;
+◇ depth information;
+◇ wind data;
+◇ routes or calculations produced by the application;
+◇ polar files imported by the user;
+◇ performance calculations or decision-support information based on such data.
+
+The user must verify the information with official sources appropriate to the intended navigation.
+
+
+4. Maps and External Data
+
+Kornog may use external data or services, for example OpenSeaMap, OpenStreetMap or weather providers.
+
+These services may be unavailable, modified, limited or interrupted.
+
+Kornog does not guarantee the permanent availability of external services.
+
+The user must comply with the licenses, terms of use and attributions associated with the displayed data.
+
+Indicative attribution:
+
+© OpenStreetMap contributors
+© OpenSeaMap contributors, where applicable
+
+
+5. Weather Data and GRIB Files
+
+Weather data and GRIB files are forecasts.
+
+They may be incorrect, inaccurate, incomplete or may not reflect the actual conditions encountered at sea.
+
+The user must consult official weather bulletins and take local conditions into account.
+
+Kornog does not guarantee the accuracy, availability, freshness or suitability of downloaded or displayed weather data.
+
+
+6. Polar Files Imported by the User
+
+Kornog may allow the user to import a boat polar file from their device.
+
+These files may be used by the application to display or calculate certain information related to the theoretical performance of the sailing boat, for example according to wind angle, wind strength or other navigation parameters.
+
+The user acknowledges that polar files may be:
+
+◇ incomplete;
+◇ inaccurate;
+◇ outdated;
+◇ incorrectly formatted;
+◇ incompatible with the application;
+◇ unsuitable for the actual boat being used;
+◇ unsuitable for real navigation conditions.
+
+The user is solely responsible for:
+
+◇ choosing the imported file;
+◇ the accuracy of the file;
+◇ its consistency with the boat being used;
+◇ its suitability for the actual condition of the boat, its sails, its load and the navigation conditions;
+◇ decisions made based on information or calculations derived from this file.
+
+Kornog does not verify the nautical validity of imported polar files.
+
+Kornog does not guarantee that the performance calculated or displayed from a polar file corresponds to the actual performance of the boat.
+
+Data derived from a polar file is theoretical information only and must not be used as the sole basis for a navigation decision.
+
+When a new polar file is imported, it may replace the polar data previously saved in the application.
+
+After importing, the user must verify that the displayed data appears consistent before any use in navigation.
+
+
+7. GPS, NMEA, AIS and Sensor Data
+
+Kornog may display data from the device or from onboard equipment.
+
+This data may be affected by:
+
+◇ poor GPS reception;
+◇ sensor error;
+◇ incorrect network configuration;
+◇ connection loss;
+◇ latency;
+◇ outdated data;
+◇ transmission error;
+◇ hardware or software incompatibility.
+
+The user must verify the consistency of the displayed information and must not rely solely on the application.
+
+AIS data, when displayed, may be incomplete, delayed, absent or incorrect.
+
+The display of AIS data in Kornog does not exempt the user from maintaining a permanent visual and auditory watch.
+
+
+8. Use at Sea
+
+Before any navigation, the user must ensure that:
+
+◇ their device is charged;
+◇ the application is functioning correctly;
+◇ the necessary maps are available;
+◇ weather data has been downloaded and is recent;
+◇ onboard instruments are functioning;
+◇ imported files, including polar files, are consistent and suitable;
+◇ the required regulatory means of navigation are available;
+◇ a backup solution is planned.
+
+Kornog must not be used as the sole means of navigation.
+
+The user must always have suitable alternative means available, including official charts, regulatory instruments, nautical documents, communication means and emergency procedures.
+
+
+9. User Responsibility
+
+The user is responsible for:
+
+◇ using the application;
+◇ verifying the displayed data;
+◇ their navigation decisions;
+◇ compliance with maritime regulations;
+◇ the safety of the vessel and crew;
+◇ configuring their equipment;
+◇ the compatibility of their hardware;
+◇ the files they import into the application;
+◇ interpreting the calculations or information provided by Kornog.
+
+The user undertakes to use Kornog in a cautious, reasonable manner and in accordance with maritime safety rules.
+
+
+10. Availability of the Application
+
+Kornog is provided as is.
+
+The application may contain errors, bugs or limitations.
+
+Interruptions may occur, including during updates, technical issues, changes to external services or limitations imposed by third-party platforms.
+
+Kornog does not guarantee that the application will be permanently available, error-free, uninterrupted or compatible with all devices, operating systems, equipment or files used by the user.
+
+
+11. Updates
+
+Kornog may be updated in order to add, modify or remove certain features.
+
+Certain features may evolve, be suspended or require a recent version of the application.
+
+The user is encouraged to keep the application up to date in order to benefit from the latest available fixes, improvements and changes.
+
+
+12. Intellectual Property
+
+The Kornog application, its interface, code, texts, graphical elements, name and distinctive elements are protected by intellectual property law, unless otherwise stated.
+
+External data, maps, tiles, weather data or other resources used in the application remain subject to the rights and licenses of their respective providers.
+
+Files imported by the user, including polar files, remain under the user's responsibility.
+
+The user must ensure that they have the necessary rights to use the files they import into the application.
+
+
+13. Prohibited Uses
+
+The user undertakes not to:
+
+◇ use Kornog in a manner contrary to the law;
+◇ use Kornog in a manner contrary to maritime safety rules;
+◇ attempt to disrupt the operation of the application;
+◇ circumvent technical limitations;
+◇ massively extract external data through the application;
+◇ use the application in a way likely to harm third-party providers;
+◇ intentionally import malicious, corrupted or disruptive files into the application;
+◇ present Kornog as an official source of maritime navigation information.
+
+
+14. Personal Data
+
+The use of Kornog may involve the processing of certain data, including location data, navigation data, configuration data, imported files or data from connected equipment.
+
+The terms governing the processing of this data are described in Kornog's Privacy Policy.
+
+The user is invited to consult that Policy in order to understand which data may be used, for what purpose, where it is stored and what rights the user has.
+
+
+15. Limitation of Liability
+
+To the extent permitted by applicable law, Kornog shall not be held liable for damages resulting from:
+
+◇ misuse of the application;
+◇ a navigation decision made on the basis of the application;
+◇ an error or absence of data;
+◇ incorrect or outdated weather data;
+◇ an incomplete, unavailable or incorrect GRIB file;
+◇ an erroneous, incomplete, outdated, unsuitable or incorrectly imported polar file;
+◇ a performance or decision-support calculation based on incorrect data;
+◇ the unavailability of an external service;
+◇ connection loss;
+◇ malfunction of the device;
+◇ sensor or instrument error;
+◇ inadequate navigation preparation;
+◇ failure to comply with maritime rules;
+◇ hardware, software or file format incompatibility.
+
+This clause does not limit the rights the user may have under mandatory applicable legal provisions.
+
+
+16. Changes to These Terms
+
+Kornog may modify these Terms of Use in order to reflect changes to the application, its features, its providers, its business model or applicable regulations.
+
+The last updated date indicates the applicable version of the Terms.
+
+In the event of a significant change, Kornog may inform users by appropriate means.
+
+
+17. Contact
+
+For any question concerning Kornog:
+
+kornog@mailo.com

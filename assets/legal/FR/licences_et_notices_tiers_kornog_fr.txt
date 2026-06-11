@@ -1,0 +1,684 @@
+KORNOG
+LICENCES OPEN SOURCE ET NOTICES DES COMPOSANTS TIERS
+====================================================
+
+Copyright (c) 2026 Kornog.
+Tous droits réservés.
+
+Ce document recense les logiciels open source, composants tiers, données
+géographiques, données cartographiques, icônes et sources de données externes
+utilisés par Kornog.
+
+Kornog est un logiciel propriétaire. Son code source, son interface
+utilisateur, ses fonctionnalités originales, ses textes, ses éléments
+graphiques, son nom, ses marques, ses logos et ses autres éléments originaux
+sont protégés par le droit de la propriété intellectuelle.
+
+Sauf autorisation écrite expresse de Kornog, aucun élément original de
+l’application Kornog ne peut être copié, modifié, adapté, traduit,
+redistribué, publié, vendu, loué, concédé en sous-licence, mis à disposition,
+décompilé, désassemblé, faire l’objet d’une ingénierie inverse ou être utilisé
+pour créer une œuvre dérivée, en tout ou partie.
+
+Cette licence propriétaire s’applique uniquement aux éléments originaux de
+Kornog. Elle ne modifie pas, ne remplace pas et ne restreint pas les droits
+accordés par les licences applicables aux composants tiers utilisés par
+l’application.
+
+Les logiciels tiers, bibliothèques, frameworks, icônes, cartes, données
+géographiques, données météo et autres composants ou données externes restent
+la propriété de leurs auteurs, contributeurs, fournisseurs et ayants droit
+respectifs, et restent soumis à leurs propres licences, droits d’auteur,
+conditions d’utilisation et notices.
+
+
+============================================
+1. APPLICATION KORNOG
+============================================
+
+Composant : Kornog
+Copyright : Copyright (c) 2026 Kornog.
+Licence : Logiciel propriétaire. Tous droits réservés.
+
+Kornog est un logiciel propriétaire.
+
+Sauf autorisation écrite expresse de Kornog, vous ne pouvez pas copier,
+modifier, adapter, traduire, procéder à une ingénierie inverse, décompiler,
+désassembler, redistribuer, concéder en sous-licence, vendre, louer, publier,
+mettre à disposition ou créer des œuvres dérivées fondées sur l’application
+Kornog, en tout ou partie.
+
+Vous pouvez utiliser Kornog uniquement dans les conditions autorisées par les
+conditions d’utilisation applicables, les conditions de la plateforme de
+distribution de l’application et la loi applicable.
+
+Aucun droit de propriété sur Kornog ne vous est transféré. Kornog, son code
+source original, sa conception, son interface utilisateur, ses fonctionnalités,
+sa documentation, ses marques, logos et autres éléments originaux restent la
+propriété exclusive de Kornog ou de ses ayants droit.
+
+Cette licence propriétaire s’applique uniquement au code et aux éléments
+originaux de l’application Kornog. Elle ne modifie pas, ne remplace pas et ne
+restreint pas les droits accordés par les licences open source tierces
+applicables aux composants tiers inclus dans Kornog ou utilisés par Kornog.
+
+Les logiciels tiers, bibliothèques, frameworks, icônes, données
+cartographiques, données géographiques et données météo restent soumis à leurs
+licences et notices respectives, indiquées dans la section relative aux
+notices des composants tiers.
+
+KORNOG EST FOURNI « EN L’ÉTAT » ET « SELON DISPONIBILITÉ », SANS GARANTIE
+D’AUCUNE SORTE, DANS LA MESURE MAXIMALE AUTORISÉE PAR LA LOI APPLICABLE.
+KORNOG NE GARANTIT PAS QUE L’APPLICATION SERA EXEMPTE D’ERREURS,
+ININTERROMPUE, EXACTE, COMPLÈTE, SÉCURISÉE OU ADAPTÉE À UN USAGE PARTICULIER.
+
+DANS LA MESURE MAXIMALE AUTORISÉE PAR LA LOI APPLICABLE, KORNOG NE POURRA
+ÊTRE TENU RESPONSABLE D’AUCUN DOMMAGE DIRECT, INDIRECT, ACCESSOIRE, SPÉCIAL,
+CONSÉCUTIF OU EXEMPLAIRE, Y COMPRIS LA PERTE DE DONNÉES, LA PERTE DE PROFITS,
+L’INTERRUPTION D’ACTIVITÉ, LES ERREURS DE NAVIGATION, LES ERREURS
+D’INTERPRÉTATION MÉTÉOROLOGIQUE OU LES DOMMAGES RÉSULTANT DE L’UTILISATION OU
+DE L’IMPOSSIBILITÉ D’UTILISER L’APPLICATION.
+
+
+============================================
+2. LOGICIELS ET FRAMEWORKS TIERS
+============================================
+
+Kornog inclut des composants logiciels mis à disposition par des tiers sous
+licences open source.
+
+Les composants suivants sont utilisés par Kornog.
+
+
+--------------------------------------------
+Flutter SDK
+--------------------------------------------
+
+Auteur : Google LLC
+Licence : BSD 3-Clause License
+Source : https://github.com/flutter/flutter
+
+Flutter est utilisé comme framework d’application pour Kornog.
+
+
+--------------------------------------------
+Dart SDK
+--------------------------------------------
+
+Auteur : Google LLC
+Licence : BSD 3-Clause License
+Source : https://github.com/dart-lang/sdk
+
+Dart est utilisé comme langage de programmation et base d’exécution pour
+Kornog.
+
+
+--------------------------------------------
+ecCodes
+--------------------------------------------
+
+Auteur : ECMWF - European Centre for Medium-Range Weather Forecasts
+Licence : Apache License 2.0
+Source : https://github.com/ecmwf/eccodes
+
+ecCodes est utilisé par Kornog pour décoder les fichiers météo GRIB.
+
+ecCodes est distribué sous licence Apache License, Version 2.0.
+
+
+--------------------------------------------
+Material Icons
+--------------------------------------------
+
+Auteur : Google LLC
+Licence : Apache License 2.0
+Source : https://github.com/google/material-design-icons
+
+Material Icons peut être utilisé dans l’interface utilisateur de Kornog.
+
+Material Icons est distribué sous licence Apache License, Version 2.0.
+
+
+--------------------------------------------
+LLVM libc++ (libc++_shared)
+--------------------------------------------
+
+Auteur : contributeurs du projet LLVM
+Licence : Apache License 2.0 avec exceptions LLVM
+Source : https://libcxx.llvm.org/
+
+La bibliothèque standard C++ LLVM libc++ (libc++_shared.so) est distribuée
+avec l’Android NDK et est embarquée dans Kornog pour l’utilisation des
+composants C++ natifs.
+
+libc++_shared est distribué sous licence Apache License, Version 2.0, avec
+exceptions LLVM. L’exception LLVM autorise la distribution des bibliothèques
+d’exécution LLVM avec des applications sans imposer d’obligations de licence
+supplémentaires à l’application elle-même.
+
+Texte de licence complet et informations de copyright disponibles à l’adresse
+suivante : https://llvm.org/LICENSE.txt
+
+
+============================================
+3. PACKAGES DART ET FLUTTER
+============================================
+
+Kornog utilise des packages Dart et Flutter tiers.
+
+Les licences des packages enregistrés dans le registre de licences Flutter
+peuvent également être affichées dans Kornog au moyen de l’écran système des
+licences open source.
+
+Les packages suivants sont utilisés par Kornog, entre autres.
+
+
+--------------------------------------------
+Composants sous licence MIT
+--------------------------------------------
+
+- flutter_riverpod
+- hooks_riverpod
+- riverpod
+- flutter_hooks
+- fl_chart
+- file_picker
+- window_manager
+- permission_handler
+- flutter_launcher_icons
+- geolocator
+- just_audio
+- just_audio_media_kit
+- flutter_foreground_task
+- udp
+- latlong2
+- xml
+- flutter_svg
+- uuid
+- connectivity_plus
+- network_info_plus
+- media_kit
+- cupertino_icons
+- just_audio_platform_interface
+- state_notifier
+- rxdart
+
+
+--------------------------------------------
+Composants sous licence BSD
+--------------------------------------------
+
+- go_router
+- intl
+- ffi
+- shared_preferences
+- collection
+- path_provider
+- http
+- path
+- flutter_map
+- proj4dart
+- csv
+
+
+--------------------------------------------
+Composants sous licence Apache License 2.0
+--------------------------------------------
+
+- ecCodes
+- Material Icons
+- jni
+- LLVM libc++ (libc++_shared, Android NDK)
+
+
+============================================
+4. DONNÉES CARTOGRAPHIQUES, TUILES ET DONNÉES GÉOGRAPHIQUES
+============================================
+
+--------------------------------------------
+OpenStreetMap
+--------------------------------------------
+
+Auteurs : contributeurs OpenStreetMap
+Licence : Open Database License 1.0
+Source : https://www.openstreetmap.org
+Informations de copyright et de licence :
+https://www.openstreetmap.org/copyright
+
+Kornog peut utiliser des données OpenStreetMap ou des tuiles cartographiques
+OpenStreetMap.
+
+Attribution requise :
+
+© OpenStreetMap contributors
+
+
+--------------------------------------------
+OpenSeaMap
+--------------------------------------------
+
+Auteurs : contributeurs OpenSeaMap
+Licence : Creative Commons Attribution-ShareAlike 2.0
+Source : https://www.openseamap.org
+
+Kornog peut utiliser des données OpenSeaMap ou des tuiles cartographiques
+nautiques OpenSeaMap.
+
+Attribution requise :
+
+© OpenSeaMap contributors
+
+
+--------------------------------------------
+GSHHG - Global Self-consistent Hierarchical High-resolution Geography
+--------------------------------------------
+
+Auteurs : Paul Wessel et Walter H. F. Smith
+Licence : GNU Lesser General Public License v3
+Source : https://www.soest.hawaii.edu/pwessel/gshhg/
+
+Kornog peut utiliser les données géographiques GSHHG pour les traits de côte,
+frontières et informations géographiques de référence.
+
+GSHHG reste soumis à ses propres conditions de licence.
+
+
+============================================
+5. DONNÉES MÉTÉO
+============================================
+
+--------------------------------------------
+GFS - Global Forecast System
+--------------------------------------------
+
+Fournisseur : NOAA / NCEP
+Source : https://nomads.ncep.noaa.gov/
+
+Kornog peut télécharger, décoder ou afficher des données météo GFS au format
+GRIB.
+
+Les données GFS sont fournies par NOAA / NCEP. Kornog ne revendique aucun
+droit de propriété sur ces données.
+
+
+--------------------------------------------
+WW3 - WAVEWATCH III
+--------------------------------------------
+
+Fournisseur : NOAA / NCEP
+Source : https://nomads.ncep.noaa.gov/
+
+Kornog peut télécharger, décoder ou afficher des données de vagues WW3 au
+format GRIB.
+
+Les données WW3 sont fournies par NOAA / NCEP. Kornog ne revendique aucun
+droit de propriété sur ces données.
+
+
+============================================
+6. ATTRIBUTION CARTOGRAPHIQUE
+============================================
+
+Lorsque des couches cartographiques sont affichées, Kornog affiche ou devrait
+afficher l’attribution cartographique pertinente.
+
+Attribution recommandée :
+
+© OpenStreetMap contributors | © OpenSeaMap contributors
+
+Lien d’attribution OpenStreetMap :
+
+https://www.openstreetmap.org/copyright
+
+Lien d’attribution OpenSeaMap :
+
+https://www.openseamap.org
+
+
+============================================
+7. AVERTISSEMENT RELATIF À LA NAVIGATION ET AUX DONNÉES
+============================================
+
+Kornog est un outil logiciel de consultation de données nautiques, de
+visualisation, d’aide à la préparation de routes et d’aide à la navigation.
+
+Kornog n’est pas un système de navigation certifié.
+
+Kornog ne remplace pas les cartes marines officielles, les avis aux
+navigateurs, les bulletins météo officiels, les instruments de navigation
+certifiés, l’équipement de sécurité à bord, le sens marin professionnel ou la
+responsabilité du chef de bord.
+
+Les prévisions météo, données géographiques, tuiles cartographiques, amers et
+balises, fichiers GRIB, traits de côte, résultats de routage et autres
+informations affichées par Kornog peuvent être incomplets, inexacts, retardés,
+indisponibles ou inadaptés à une décision de navigation particulière.
+
+L’utilisateur reste seul responsable de la vérification de toutes les
+informations auprès de sources officielles et adaptées avant toute décision de
+navigation.
+
+
+============================================
+8. EXCLUSION DE GARANTIE RELATIVE AUX COMPOSANTS TIERS
+============================================
+
+Les logiciels, données et services tiers inclus dans Kornog ou utilisés par
+Kornog sont fournis par leurs auteurs, mainteneurs, contributeurs et
+fournisseurs respectifs.
+
+Kornog ne revendique aucun droit de propriété sur les composants tiers.
+
+Sauf exigence contraire de la loi applicable ou d’une licence spécifique, les
+composants tiers sont fournis sans garantie d’aucune sorte.
+
+
+============================================
+9. LICENCE MIT
+============================================
+
+Le texte de licence suivant s’applique aux composants distribués sous licence
+MIT.
+
+MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the “Software”), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+
+============================================
+10. LICENCE BSD 3-CLAUSE
+============================================
+
+Le texte de licence suivant s’applique aux composants distribués sous licence
+BSD 3-Clause.
+
+BSD 3-Clause License
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the applicable copyright
+   notice, this list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the applicable copyright
+   notice, this list of conditions and the following disclaimer in the
+   documentation and/or other materials provided with the distribution.
+
+3. Neither the name of the copyright holder nor the names of its contributors
+   may be used to endorse or promote products derived from this software
+   without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS”
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES, INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+INTERRUPTION, HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+CONTRACT, STRICT LIABILITY, OR TORT, INCLUDING NEGLIGENCE OR OTHERWISE,
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGE.
+
+
+============================================
+11. APACHE LICENSE 2.0
+============================================
+
+Le texte de licence suivant s’applique aux composants distribués sous licence
+Apache License, Version 2.0, notamment ecCodes et Material Icons le cas
+échéant.
+
+Apache License
+Version 2.0, January 2004
+http://www.apache.org/licenses/
+
+TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+
+1. Definitions.
+
+“License” shall mean the terms and conditions for use, reproduction, and
+distribution as defined by Sections 1 through 9 of this document.
+
+“Licensor” shall mean the copyright owner or entity authorized by the
+copyright owner that is granting the License.
+
+“Legal Entity” shall mean the union of the acting entity and all other
+entities that control, are controlled by, or are under common control with
+that entity. For the purposes of this definition, “control” means (i) the
+power, direct or indirect, to cause the direction or management of such
+entity, whether by contract or otherwise, or (ii) ownership of fifty percent
+(50%) or more of the outstanding shares, or (iii) beneficial ownership of
+such entity.
+
+“You” or “Your” shall mean an individual or Legal Entity exercising
+permissions granted by this License.
+
+“Source” form shall mean the preferred form for making modifications,
+including but not limited to software source code, documentation source, and
+configuration files.
+
+“Object” form shall mean any form resulting from mechanical transformation
+or translation of a Source form, including but not limited to compiled object
+code, generated documentation, and conversions to other media types.
+
+“Work” shall mean the work of authorship, whether in Source or Object form,
+made available under the License, as indicated by a copyright notice that is
+included in or attached to the work.
+
+“Derivative Works” shall mean any work, whether in Source or Object form,
+that is based on or derived from the Work and for which the editorial
+revisions, annotations, elaborations, or other modifications represent, as a
+whole, an original work of authorship. For the purposes of this License,
+Derivative Works shall not include works that remain separable from, or
+merely link or bind by name to the interfaces of, the Work and Derivative
+Works thereof.
+
+“Contribution” shall mean any work of authorship, including the original
+version of the Work and any modifications or additions to that Work or
+Derivative Works thereof, that is intentionally submitted to Licensor for
+inclusion in the Work by the copyright owner or by an individual or Legal
+Entity authorized to submit on behalf of the copyright owner. For the
+purposes of this definition, “submitted” means any form of electronic,
+verbal, or written communication sent to the Licensor or its representatives,
+including but not limited to communication on electronic mailing lists, source
+code control systems, and issue tracking systems that are managed by, or on
+behalf of, the Licensor for the purpose of discussing and improving the Work,
+but excluding communication that is conspicuously marked or otherwise
+designated in writing by the copyright owner as “Not a Contribution.”
+
+“Contributor” shall mean Licensor and any individual or Legal Entity on
+behalf of whom a Contribution has been received by Licensor and subsequently
+incorporated within the Work.
+
+2. Grant of Copyright License.
+
+Subject to the terms and conditions of this License, each Contributor hereby
+grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free,
+irrevocable copyright license to reproduce, prepare Derivative Works of,
+publicly display, publicly perform, sublicense, and distribute the Work and
+such Derivative Works in Source or Object form.
+
+3. Grant of Patent License.
+
+Subject to the terms and conditions of this License, each Contributor hereby
+grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free,
+irrevocable patent license to make, have made, use, offer to sell, sell,
+import, and otherwise transfer the Work, where such license applies only to
+those patent claims licensable by such Contributor that are necessarily
+infringed by their Contribution alone or by combination of their Contribution
+with the Work to which such Contribution was submitted. If You institute
+patent litigation against any entity, including a cross-claim or counterclaim
+in a lawsuit, alleging that the Work or a Contribution incorporated within
+the Work constitutes direct or contributory patent infringement, then any
+patent licenses granted to You under this License for that Work shall
+terminate as of the date such litigation is filed.
+
+4. Redistribution.
+
+You may reproduce and distribute copies of the Work or Derivative Works
+thereof in any medium, with or without modifications, and in Source or Object
+form, provided that You meet the following conditions:
+
+(a) You must give any other recipients of the Work or Derivative Works a copy
+of this License; and
+
+(b) You must cause any modified files to carry prominent notices stating that
+You changed the files; and
+
+(c) You must retain, in the Source form of any Derivative Works that You
+distribute, all copyright, patent, trademark, and attribution notices from
+the Source form of the Work, excluding those notices that do not pertain to
+any part of the Derivative Works; and
+
+(d) If the Work includes a “NOTICE” text file as part of its distribution,
+then any Derivative Works that You distribute must include a readable copy of
+the attribution notices contained within such NOTICE file, excluding those
+notices that do not pertain to any part of the Derivative Works, in at least
+one of the following places: within a NOTICE text file distributed as part of
+the Derivative Works; within the Source form or documentation, if provided
+along with the Derivative Works; or, within a display generated by the
+Derivative Works, if and wherever such third-party notices normally appear.
+The contents of the NOTICE file are for informational purposes only and do
+not modify the License. You may add Your own attribution notices within
+Derivative Works that You distribute, alongside or as an addendum to the
+NOTICE text from the Work, provided that such additional attribution notices
+cannot be construed as modifying the License.
+
+You may add Your own copyright statement to Your modifications and may
+provide additional or different license terms and conditions for use,
+reproduction, or distribution of Your modifications, or for any such
+Derivative Works as a whole, provided Your use, reproduction, and
+distribution of the Work otherwise complies with the conditions stated in
+this License.
+
+5. Submission of Contributions.
+
+Unless You explicitly state otherwise, any Contribution intentionally
+submitted for inclusion in the Work by You to the Licensor shall be under the
+terms and conditions of this License, without any additional terms or
+conditions. Notwithstanding the above, nothing herein shall supersede or
+modify the terms of any separate license agreement you may have executed with
+Licensor regarding such Contributions.
+
+6. Trademarks.
+
+This License does not grant permission to use the trade names, trademarks,
+service marks, or product names of the Licensor, except as required for
+reasonable and customary use in describing the origin of the Work and
+reproducing the content of the NOTICE file.
+
+7. Disclaimer of Warranty.
+
+Unless required by applicable law or agreed to in writing, Licensor provides
+the Work and each Contributor provides its Contributions on an “AS IS” BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied,
+including, without limitation, any warranties or conditions of TITLE,
+NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A PARTICULAR PURPOSE. You
+are solely responsible for determining the appropriateness of using or
+redistributing the Work and assume any risks associated with Your exercise of
+permissions under this License.
+
+8. Limitation of Liability.
+
+In no event and under no legal theory, whether in tort, including negligence,
+contract, or otherwise, unless required by applicable law, such as deliberate
+and grossly negligent acts, or agreed to in writing, shall any Contributor be
+liable to You for damages, including any direct, indirect, special,
+incidental, or consequential damages of any character arising as a result of
+this License or out of the use or inability to use the Work, including but
+not limited to damages for loss of goodwill, work stoppage, computer failure
+or malfunction, or any and all other commercial damages or losses, even if
+such Contributor has been advised of the possibility of such damages.
+
+9. Accepting Warranty or Additional Liability.
+
+While redistributing the Work or Derivative Works thereof, You may choose to
+offer, and charge a fee for, acceptance of support, warranty, indemnity, or
+other liability obligations and/or rights consistent with this License.
+However, in accepting such obligations, You may act only on Your own behalf
+and on Your sole responsibility, not on behalf of any other Contributor, and
+only if You agree to indemnify, defend, and hold each Contributor harmless
+for any liability incurred by, or claims asserted against, such Contributor
+by reason of your accepting any such warranty or additional liability.
+
+
+============================================
+12. NOTICE LGPL V3
+============================================
+
+La notice suivante s’applique aux composants ou données distribués sous GNU
+Lesser General Public License version 3, notamment GSHHG le cas échéant.
+
+GSHHG - Global Self-consistent Hierarchical High-resolution Geography
+Copyright : Paul Wessel et Walter H. F. Smith
+Licence : GNU Lesser General Public License version 3
+Source : https://www.soest.hawaii.edu/pwessel/gshhg/
+
+GSHHG est un logiciel libre : vous pouvez le redistribuer et/ou le modifier
+selon les termes de la GNU Lesser General Public License publiée par la Free
+Software Foundation, soit la version 3 de la licence, soit, à votre choix,
+toute version ultérieure.
+
+GSHHG est distribué dans l’espoir qu’il sera utile, mais SANS AUCUNE
+GARANTIE ; sans même la garantie implicite de QUALITÉ MARCHANDE ou
+D’ADÉQUATION À UN USAGE PARTICULIER.
+
+Une copie de la GNU Lesser General Public License version 3 est disponible à
+l’adresse suivante :
+
+https://www.gnu.org/licenses/lgpl-3.0.html
+
+
+============================================
+13. NOTICE OPEN DATABASE LICENSE
+============================================
+
+La notice suivante s’applique aux données OpenStreetMap.
+
+Les données OpenStreetMap sont mises à disposition sous Open Database License
+1.0.
+
+Les informations de copyright et de licence d’OpenStreetMap sont disponibles
+à l’adresse suivante :
+
+https://www.openstreetmap.org/copyright
+
+L’Open Database License 1.0 est disponible à l’adresse suivante :
+
+https://opendatacommons.org/licenses/odbl/1-0/
+
+
+============================================
+14. NOTICE CREATIVE COMMONS ATTRIBUTION-SHAREALIKE
+============================================
+
+La notice suivante s’applique aux données ou tuiles OpenSeaMap le cas échéant.
+
+Les données ou tuiles OpenSeaMap peuvent être soumises aux conditions de
+licence Creative Commons Attribution-ShareAlike.
+
+Les informations relatives à OpenSeaMap sont disponibles à l’adresse suivante :
+
+https://www.openseamap.org
+
+
+============================================
+15. FIN
+============================================
