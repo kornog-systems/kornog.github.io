@@ -9,14 +9,11 @@
   <meta name="keywords"
         content="navigation voile, application voilier, NMEA, Signal K, instrumentation, routage, météo GRIB, alarmes navigation, plaisance">
   <meta name="author" content="Kornog — Félicien Moquet">
-
-  <!-- Open Graph -->
   <meta property="og:title"       content="Kornog — Le copilote de navigation pour voiliers">
   <meta property="og:description" content="Instrumentation, cartographie, routage, alertes et analyse dans une seule application mobile.">
   <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://kornog-systems.github.io/kornog.github.io/">
   <!-- TODO : og:image → assets/Images/og-image.png (1200×630 px) -->
-  <meta property="og:url" content="https://kornog-systems.github.io/kornog.github.io/">
-
   <link rel="icon" type="image/png" href="assets/Images/Kornog%20icone.png">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -29,11 +26,10 @@
   <div class="container header-inner">
 
     <a href="#accueil" class="logo" aria-label="Kornog — Accueil">
-      <!-- L'image icone+nom.png est chargée en premier ; si elle échoue le logo texte s'affiche -->
       <img src="assets/Images/icone+nom.png" alt="Kornog"
            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
       <span class="logo-fallback" style="display:none">
-        <span class="logo-fallback-icon">⚓</span>Kornog
+        <span class="logo-fallback-mark">K</span>Kornog
       </span>
     </a>
 
@@ -56,8 +52,7 @@
   </div>
 </header>
 
-<!-- Menu mobile (injecté par JS) -->
-<div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+<div class="mobile-nav" id="mobile-nav">
   <a href="#fonctionnalites">Fonctionnalités</a>
   <a href="#captures">Captures</a>
   <a href="#telechargements">Téléchargements</a>
@@ -73,10 +68,25 @@
 ══════════════════════════════════════ -->
 <section class="hero" id="accueil">
   <div class="container">
+
+    <!-- Logo + nom mis en avant -->
+    <div class="hero-logo-area">
+      <!--
+        icone+nom.png est affiché en grand ici.
+        Si l'image n'est pas disponible, le texte "Kornog" s'affiche.
+      -->
+      <img
+        src="assets/Images/icone+nom.png"
+        alt="Kornog"
+        class="hero-logo-img"
+        onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+      <span style="display:none; font-size:2.5rem; font-weight:800; color:var(--navy);">Kornog</span>
+    </div>
+
     <div class="hero-inner">
 
       <div class="hero-text">
-        <span class="badge badge--white">Application de navigation mobile</span>
+        <span class="badge badge--magenta">Application de navigation mobile</span>
         <h1 class="hero-title">
           Les données de votre voilier,<br>
           <span class="accent">en temps réel</span>
@@ -87,21 +97,21 @@
           sur téléphone ou tablette.
         </p>
         <div class="btn-group hero-buttons">
-          <a href="#telechargements" class="btn btn--primary btn--lg">↓ Télécharger</a>
-          <a href="#fonctionnalites" class="btn btn--outline-white btn--lg">Voir les fonctionnalités</a>
+          <a href="#telechargements" class="btn btn--primary btn--lg">Télécharger</a>
+          <a href="#fonctionnalites" class="btn btn--outline btn--lg">Voir les fonctionnalités</a>
         </div>
         <div class="hero-meta">
-          <span class="hero-meta-item">📱 Android · iOS</span>
-          <span class="hero-meta-item">🖥️ Windows · Linux</span>
-          <span class="hero-meta-item">📡 Wi-Fi / NMEA</span>
+          <span class="hero-meta-item">Android · iOS</span>
+          <span class="hero-meta-item">Windows · Linux</span>
+          <span class="hero-meta-item">Wi-Fi / NMEA</span>
         </div>
       </div>
 
       <div class="hero-media">
         <!--
-          TODO : Remplacer cette image par votre meilleur mockup ou capture.
-          Option tablette (paysage) : assets/Images/images Tablette/10pouces.png
-          Option téléphone (portrait) : assets/Images/images telephone/1000019521.jpg
+          TODO : Choisir la meilleure capture à mettre en avant ici.
+          Tablette paysage : assets/Images/images Tablette/10pouces.png
+          Téléphone portrait : assets/Images/images telephone/1000019521.jpg
         -->
         <img
           src="assets/Images/images%20Tablette/10pouces.png"
@@ -109,9 +119,8 @@
           class="hero-mockup"
           onerror="this.style.display='none';document.querySelector('.hero-placeholder').style.display='flex';">
         <div class="hero-placeholder" style="display:none">
-          <span style="font-size:3rem">📱</span>
-          <span>Capture de l'application</span>
-          <span style="font-size:.72rem;opacity:.6">Remplacer par votre mockup</span>
+          <span style="font-size:2rem; color:var(--gray-300);">Capture de l'application</span>
+          <span style="font-size:.75rem;">Remplacer par votre mockup</span>
         </div>
       </div>
 
@@ -123,7 +132,7 @@
 <!-- ══════════════════════════════════════
      PROBLÈME
 ══════════════════════════════════════ -->
-<section class="section section--gray" id="probleme">
+<section class="section" id="probleme">
   <div class="container">
     <div class="section-header reveal">
       <span class="badge badge--navy">Le constat</span>
@@ -135,32 +144,20 @@
 
     <div class="problem-grid">
       <div class="problem-card reveal">
-        <span class="problem-icon">📊</span>
-        <div>
-          <h4>Données dispersées</h4>
-          <p>Chaque instrument affiche ses propres données, sans vue d'ensemble cohérente.</p>
-        </div>
+        <h4>Données dispersées</h4>
+        <p>Chaque instrument affiche ses propres données, sans vue d'ensemble cohérente.</p>
       </div>
       <div class="problem-card reveal">
-        <span class="problem-icon">🖥️</span>
-        <div>
-          <h4>Écrans multiples</h4>
-          <p>La navigation entre plusieurs écrans augmente la charge cognitive à bord.</p>
-        </div>
+        <h4>Écrans multiples</h4>
+        <p>La navigation entre plusieurs écrans augmente la charge cognitive à bord.</p>
       </div>
       <div class="problem-card reveal">
-        <span class="problem-icon">👁️</span>
-        <div>
-          <h4>Lecture difficile</h4>
-          <p>Certaines informations importantes sont peu lisibles pendant la navigation active.</p>
-        </div>
+        <h4>Lecture difficile</h4>
+        <p>Certaines informations importantes sont peu lisibles pendant la navigation active.</p>
       </div>
       <div class="problem-card reveal">
-        <span class="problem-icon">📁</span>
-        <div>
-          <h4>Historique peu exploitable</h4>
-          <p>Après la navigation, il manque souvent un historique précis pour analyser et progresser.</p>
-        </div>
+        <h4>Historique peu exploitable</h4>
+        <p>Après la navigation, il manque souvent un historique précis pour analyser et progresser.</p>
       </div>
     </div>
   </div>
@@ -170,7 +167,7 @@
 <!-- ══════════════════════════════════════
      SOLUTION
 ══════════════════════════════════════ -->
-<section class="section" id="solution">
+<section class="section section--gray" id="solution">
   <div class="container">
     <div class="solution-inner">
 
@@ -185,12 +182,12 @@
       </div>
 
       <div class="solution-cards reveal">
-        <div class="solution-card"><span class="solution-card-icon">⚡</span><span class="solution-card-label">Temps réel</span></div>
-        <div class="solution-card"><span class="solution-card-icon">📡</span><span class="solution-card-label">Wi-Fi / Passerelles</span></div>
-        <div class="solution-card"><span class="solution-card-icon">🔔</span><span class="solution-card-label">Alarmes embarquées</span></div>
-        <div class="solution-card"><span class="solution-card-icon">📈</span><span class="solution-card-label">Historique &amp; Analyse</span></div>
-        <div class="solution-card"><span class="solution-card-icon">🗺️</span><span class="solution-card-label">Cartographie</span></div>
-        <div class="solution-card"><span class="solution-card-icon">🌤️</span><span class="solution-card-label">Météo GRIB</span></div>
+        <div class="solution-card">Temps réel</div>
+        <div class="solution-card">Wi-Fi / Passerelles</div>
+        <div class="solution-card">Alarmes embarquées</div>
+        <div class="solution-card">Historique &amp; Analyse</div>
+        <div class="solution-card">Cartographie</div>
+        <div class="solution-card">Météo GRIB</div>
       </div>
 
     </div>
@@ -201,7 +198,7 @@
 <!-- ══════════════════════════════════════
      FONCTIONNALITÉS
 ══════════════════════════════════════ -->
-<section class="section section--gray" id="fonctionnalites">
+<section class="section" id="fonctionnalites">
   <div class="container">
     <div class="section-header reveal">
       <span class="badge badge--navy">Fonctionnalités</span>
@@ -213,7 +210,6 @@
     <div class="features-grid">
 
       <div class="feature-card reveal">
-        <span class="feature-icon">📡</span>
         <h3>Données en temps réel</h3>
         <p>Affichage des données reçues depuis une passerelle compatible : vent, vitesse, cap,
            GPS, AIS, profondeur et autres données selon la configuration à bord.</p>
@@ -221,7 +217,6 @@
       </div>
 
       <div class="feature-card reveal">
-        <span class="feature-icon">📱</span>
         <h3>Interface embarquée</h3>
         <p>Interface pensée pour une utilisation à bord, sur téléphone ou tablette,
            avec une lecture claire et hiérarchisée des informations importantes.</p>
@@ -229,7 +224,6 @@
       </div>
 
       <div class="feature-card reveal">
-        <span class="feature-icon">🧭</span>
         <h3>Routage et aide à la décision</h3>
         <p>Fonctions de routage et d'aide à la décision pour la navigation côtière,
            avec une évolution progressive vers des analyses plus avancées.</p>
@@ -237,7 +231,6 @@
       </div>
 
       <div class="feature-card reveal">
-        <span class="feature-icon">🌤️</span>
         <h3>Météo GRIB</h3>
         <p>Affichage de fichiers météo GRIB : vent, rafales, vagues et autres données
            selon les fichiers utilisés et téléchargés.</p>
@@ -245,15 +238,13 @@
       </div>
 
       <div class="feature-card reveal">
-        <span class="feature-icon">🔔</span>
         <h3>Alarmes embarquées</h3>
         <p>Alarmes utiles pour le mouillage, le compte à rebours de régate, l'AIS
            ou certains seuils de navigation configurés par l'utilisateur.</p>
-        <span class="feature-tag">Sécurité</span>
+        <span class="feature-tag">Alarmes</span>
       </div>
 
       <div class="feature-card reveal">
-        <span class="feature-icon">📋</span>
         <h3>Historique des navigations</h3>
         <p>Enregistrement des sessions de navigation pour garder une trace des sorties
            et pouvoir revenir sur les données importantes après la navigation.</p>
@@ -261,7 +252,6 @@
       </div>
 
       <div class="feature-card reveal">
-        <span class="feature-icon">📊</span>
         <h3>Analyse des tendances de vent</h3>
         <p>Visualisation et analyse des évolutions du vent pour mieux comprendre
            les conditions rencontrées pendant la navigation.</p>
@@ -269,7 +259,6 @@
       </div>
 
       <div class="feature-card reveal">
-        <span class="feature-icon">🔌</span>
         <h3>Compatibilité passerelles</h3>
         <p>Réception des données via Wi-Fi depuis des passerelles ou instruments compatibles.
            Compatible NMEA 0183 et Signal K selon la configuration matérielle à bord.</p>
@@ -277,11 +266,10 @@
       </div>
 
       <div class="feature-card reveal">
-        <span class="feature-icon">🚢</span>
         <h3>Surveillance AIS</h3>
         <p>Affichage et surveillance des données AIS pour une meilleure connaissance
            du trafic environnant, selon les données reçues depuis les instruments à bord.</p>
-        <span class="feature-tag">Trafic</span>
+        <span class="feature-tag">AIS</span>
       </div>
 
     </div>
@@ -297,10 +285,10 @@
 <!-- ══════════════════════════════════════
      CAPTURES D'ÉCRAN
 ══════════════════════════════════════ -->
-<section class="section" id="captures">
+<section class="section section--gray" id="captures">
   <div class="container">
     <div class="section-header reveal">
-      <span class="badge badge--magenta">Captures d'écran</span>
+      <span class="badge badge--navy">Captures d'écran</span>
       <h2>Une interface pensée pour le bord</h2>
       <p>Des écrans lisibles, des données hiérarchisées et une navigation fluide
          pour garder l'attention sur l'essentiel.</p>
@@ -308,10 +296,7 @@
 
     <div class="screenshots-gallery reveal">
       <div class="gallery-track" id="galleryTrack">
-        <!--
-          TODO : Remplacer les attributs alt par les descriptions réelles de chaque écran.
-          Les noms de fichiers actuels sont conservés tels quels.
-        -->
+        <!-- TODO : Mettre à jour les textes alt avec les descriptions réelles de chaque écran -->
         <div class="gallery-item">
           <img src="assets/Images/images%20telephone/1000019521.jpg" alt="Tableau de bord instruments" loading="lazy">
           <div class="gallery-label">Tableau de bord</div>
@@ -344,21 +329,20 @@
           <img src="assets/Images/images%20telephone/1000019530.jpg" alt="Vue AIS" loading="lazy">
           <div class="gallery-label">AIS</div>
         </div>
-        <!-- Tablette -->
         <div class="gallery-item wide">
-          <img src="assets/Images/images%20Tablette/1.jpeg" alt="Vue tablette — navigation" loading="lazy">
+          <img src="assets/Images/images%20Tablette/1.jpeg" alt="Vue tablette" loading="lazy">
           <div class="gallery-label">Vue tablette</div>
         </div>
         <div class="gallery-item wide">
           <img src="assets/Images/images%20Tablette/2.jpeg" alt="Vue tablette — données" loading="lazy">
-          <div class="gallery-label">Tablette — Données</div>
+          <div class="gallery-label">Tablette — données</div>
         </div>
       </div>
 
       <div class="gallery-controls">
-        <button class="gallery-btn" id="galleryPrev" aria-label="Capture précédente">←</button>
+        <button class="gallery-btn" id="galleryPrev" aria-label="Capture précédente">&#8592;</button>
         <div class="gallery-dots" id="galleryDots"></div>
-        <button class="gallery-btn" id="galleryNext" aria-label="Capture suivante">→</button>
+        <button class="gallery-btn" id="galleryNext" aria-label="Capture suivante">&#8594;</button>
       </div>
     </div>
   </div>
@@ -368,10 +352,10 @@
 <!-- ══════════════════════════════════════
      TÉLÉCHARGEMENTS
 ══════════════════════════════════════ -->
-<section class="section section--dark" id="telechargements">
+<section class="section" id="telechargements">
   <div class="container">
     <div class="section-header reveal">
-      <span class="badge badge--white">Téléchargements</span>
+      <span class="badge badge--magenta">Téléchargements</span>
       <h2>Tester Kornog</h2>
       <p>Kornog est en développement actif. Les versions disponibles permettent de tester
          les premières fonctionnalités et de contribuer aux retours terrain.</p>
@@ -380,79 +364,63 @@
     <div class="downloads-grid">
 
       <!-- Google Play -->
-      <!-- TODO : Changer status--soon en status--available et décommenter le lien quand dispo -->
+      <!-- TODO : Changer status--soon et décommenter le lien quand disponible -->
       <div class="download-card reveal">
-        <span class="download-icon">▶️</span>
-        <div>
-          <div class="download-platform">Google Play</div>
-          <div class="download-desc">Version Android via le Play Store officiel</div>
-        </div>
+        <div class="download-platform">Google Play</div>
+        <div class="download-desc">Version Android via le Play Store officiel</div>
         <span class="download-status status--soon">Bientôt disponible</span>
         <!--
         <a href="https://play.google.com/store/apps/details?id=VOTRE_PACKAGE"
-           class="btn btn--white btn--sm" target="_blank" rel="noopener noreferrer">
+           class="btn btn--primary btn--sm" target="_blank" rel="noopener noreferrer">
           Télécharger
         </a>
         -->
       </div>
 
       <!-- APK Android -->
-      <!-- TODO : Ajouter le lien APK (asset GitHub Release ou hébergement direct) -->
+      <!-- TODO : Déposer le fichier APK dans releases/ et mettre à jour le href -->
       <div class="download-card reveal">
-        <span class="download-icon">🤖</span>
-        <div>
-          <div class="download-platform">Android APK</div>
-          <div class="download-desc">Installation directe hors Play Store</div>
-        </div>
+        <div class="download-platform">Android APK</div>
+        <div class="download-desc">Installation directe hors Play Store</div>
         <span class="download-status status--beta">Version bêta</span>
         <!--
-        <a href="assets/downloads/kornog-latest.apk"
-           class="btn btn--outline-white btn--sm" download>
+        <a href="releases/kornog-android-vX.X.X.apk"
+           class="btn btn--outline btn--sm" download>
           Télécharger l'APK
         </a>
         -->
       </div>
 
       <!-- iOS -->
-      <!-- TODO : Ajouter le lien App Store quand disponible -->
       <div class="download-card reveal disabled">
-        <span class="download-icon">🍎</span>
-        <div>
-          <div class="download-platform">iOS / iPadOS</div>
-          <div class="download-desc">iPhone et iPad via l'App Store</div>
-        </div>
+        <div class="download-platform">iOS / iPadOS</div>
+        <div class="download-desc">iPhone et iPad via l'App Store</div>
         <span class="download-status status--soon">À venir</span>
       </div>
 
       <!-- Windows -->
-      <!-- TODO : Ajouter le lien téléchargement Windows (.exe / .msi) -->
+      <!-- TODO : Déposer le fichier .exe dans releases/ et mettre à jour le href -->
       <div class="download-card reveal">
-        <span class="download-icon">🪟</span>
-        <div>
-          <div class="download-platform">Windows</div>
-          <div class="download-desc">Version desktop Windows 10 / 11</div>
-        </div>
+        <div class="download-platform">Windows</div>
+        <div class="download-desc">Version desktop Windows 10 / 11</div>
         <span class="download-status status--soon">Bientôt disponible</span>
         <!--
-        <a href="assets/downloads/kornog-windows-setup.exe"
-           class="btn btn--outline-white btn--sm" download>
+        <a href="releases/kornog-windows-vX.X.X-setup.exe"
+           class="btn btn--outline btn--sm" download>
           Télécharger
         </a>
         -->
       </div>
 
       <!-- Linux -->
-      <!-- TODO : Ajouter le lien téléchargement Linux (.deb ou .AppImage) -->
+      <!-- TODO : Déposer le fichier .AppImage ou .deb dans releases/ et mettre à jour le href -->
       <div class="download-card reveal">
-        <span class="download-icon">🐧</span>
-        <div>
-          <div class="download-platform">Linux</div>
-          <div class="download-desc">Version desktop Linux (.deb / .AppImage)</div>
-        </div>
+        <div class="download-platform">Linux</div>
+        <div class="download-desc">Version desktop Linux (.deb / .AppImage)</div>
         <span class="download-status status--soon">Bientôt disponible</span>
         <!--
-        <a href="assets/downloads/kornog-linux.AppImage"
-           class="btn btn--outline-white btn--sm" download>
+        <a href="releases/kornog-linux-vX.X.X.AppImage"
+           class="btn btn--outline btn--sm" download>
           Télécharger
         </a>
         -->
@@ -462,9 +430,8 @@
 
     <div class="downloads-github reveal">
       <p>Toutes les versions et l'historique des releases sont disponibles sur GitHub</p>
-      <!-- TODO : Remplacer l'URL par votre dépôt GitHub réel -->
       <a href="https://github.com/kornog-systems/kornog.github.io/releases"
-         class="btn btn--outline-white"
+         class="btn btn--outline"
          target="_blank" rel="noopener noreferrer">
         Voir toutes les releases sur GitHub
       </a>
@@ -472,7 +439,6 @@
 
     <p class="downloads-note">
       Kornog est en développement actif. Les fonctionnalités et la stabilité s'améliorent progressivement.
-      Les retours utilisateurs sont précieux.
     </p>
   </div>
 </section>
@@ -481,10 +447,10 @@
 <!-- ══════════════════════════════════════
      PROJET
 ══════════════════════════════════════ -->
-<section class="section" id="projet">
+<section class="section section--gray" id="projet">
   <div class="container">
-
     <div class="project-layout">
+
       <div class="project-text reveal">
         <span class="badge badge--magenta">Le projet</span>
         <h2>Construit autour des besoins réels des navigateurs</h2>
@@ -504,7 +470,7 @@
         </div>
         <div class="stat-card">
           <span class="stat-value">Multi</span>
-          <span class="stat-label">Plateformes : Android, iOS, Windows, Linux</span>
+          <span class="stat-label">Android, iOS, Windows, Linux</span>
         </div>
         <div class="stat-card">
           <span class="stat-value">Wi-Fi</span>
@@ -515,23 +481,17 @@
           <span class="stat-label">Interopérabilité NMEA / Signal K</span>
         </div>
       </div>
+
     </div>
 
-    <!-- Partenaires -->
     <div class="reveal">
       <p class="partners-heading">Accompagnement &amp; Partenaires</p>
       <div class="partners-grid">
-        <!--
-          TODO : Remplacer ces blocs texte par de vraies images :
-          <div class="partner-item">
-            <img src="assets/Images/logos/ensta.png" alt="ENSTA Bretagne">
-          </div>
-        -->
+        <!-- TODO : Remplacer par les vraies images logos des partenaires -->
         <div class="partner-item">ENSTA Bretagne</div>
         <div class="partner-item">Institut Polytechnique de Paris</div>
         <div class="partner-item">Pépite Bretagne</div>
         <div class="partner-item">Passeport Armorique</div>
-        <!-- TODO : Ajouter d'autres partenaires éventuels ici -->
       </div>
     </div>
 
@@ -542,7 +502,7 @@
 <!-- ══════════════════════════════════════
      PUBLIC CIBLE
 ══════════════════════════════════════ -->
-<section class="section section--gray" id="audience">
+<section class="section" id="audience">
   <div class="container">
     <div class="section-header reveal">
       <span class="badge badge--navy">Pour qui ?</span>
@@ -553,31 +513,31 @@
 
     <div class="audience-grid">
       <div class="audience-card reveal">
-        <span class="audience-icon">⚓</span>
+        <span class="audience-type">Propriétaires</span>
         <h3>Propriétaires de voiliers</h3>
         <p>Pour suivre clairement les données disponibles à bord et mieux exploiter
            les instruments déjà installés.</p>
       </div>
       <div class="audience-card reveal">
-        <span class="audience-icon">🧑‍✈️</span>
+        <span class="audience-type">Équipiers</span>
         <h3>Équipiers</h3>
         <p>Pour accéder facilement aux informations utiles pendant la navigation,
            depuis son propre téléphone.</p>
       </div>
       <div class="audience-card reveal">
-        <span class="audience-icon">🏆</span>
+        <span class="audience-type">Régatiers</span>
         <h3>Régatiers</h3>
         <p>Pour gérer le compte à rebours, surveiller les conditions de vent
            et analyser les tendances rencontrées.</p>
       </div>
       <div class="audience-card reveal">
-        <span class="audience-icon">🌊</span>
+        <span class="audience-type">Croisiéristes</span>
         <h3>Croisiéristes</h3>
         <p>Pour renforcer la lisibilité des informations, gérer les alarmes
            et conserver un suivi précis des sorties.</p>
       </div>
       <div class="audience-card reveal">
-        <span class="audience-icon">⛵</span>
+        <span class="audience-type">Clubs &amp; Écoles</span>
         <h3>Clubs &amp; Écoles de voile</h3>
         <p>Pour tester une solution accessible et évolutive autour de la donnée embarquée,
            à moindre coût d'installation.</p>
@@ -590,43 +550,31 @@
 <!-- ══════════════════════════════════════
      VISION
 ══════════════════════════════════════ -->
-<section class="section section--dark" id="vision">
+<section class="section section--gray" id="vision">
   <div class="container">
     <div class="section-header reveal">
-      <span class="badge badge--white">Vision</span>
+      <span class="badge badge--navy">Vision</span>
       <h2>Vers une navigation plus intelligente et accessible</h2>
       <p>Kornog vise à devenir une plateforme ouverte et interopérable, capable d'exploiter
-         les données du bord pour améliorer progressivement l'aide à la décision et l'analyse de performance.</p>
+         les données du bord pour améliorer progressivement l'aide à la décision.</p>
     </div>
 
     <div class="vision-grid">
       <div class="vision-item reveal">
-        <span class="vision-item-icon">📈</span>
-        <div>
-          <h4>Polaires vivantes</h4>
-          <p>Routage progressivement ajusté aux performances réelles du bateau, selon les conditions rencontrées.</p>
-        </div>
+        <h4>Polaires vivantes</h4>
+        <p>Routage progressivement ajusté aux performances réelles du bateau selon les conditions rencontrées.</p>
       </div>
       <div class="vision-item reveal">
-        <span class="vision-item-icon">🧠</span>
-        <div>
-          <h4>Analyse embarquée</h4>
-          <p>Meilleure exploitation des données locales pour comprendre les conditions et progresser.</p>
-        </div>
+        <h4>Analyse embarquée</h4>
+        <p>Meilleure exploitation des données locales pour comprendre les conditions et progresser.</p>
       </div>
       <div class="vision-item reveal">
-        <span class="vision-item-icon">🔓</span>
-        <div>
-          <h4>Plateforme ouverte</h4>
-          <p>Interopérabilité et ouverture vers d'autres supports, formats et données marines standards.</p>
-        </div>
+        <h4>Plateforme ouverte</h4>
+        <p>Interopérabilité et ouverture vers d'autres supports, formats et données marines standards.</p>
       </div>
       <div class="vision-item reveal">
-        <span class="vision-item-icon">🌍</span>
-        <div>
-          <h4>Extension multi-supports</h4>
-          <p>Extension possible vers d'autres plateformes et usages à mesure du développement du projet.</p>
-        </div>
+        <h4>Extension multi-supports</h4>
+        <p>Extension possible vers d'autres plateformes et usages à mesure du développement du projet.</p>
       </div>
     </div>
 
@@ -643,7 +591,7 @@
 <section class="section disclaimer-section" id="avertissement">
   <div class="container">
     <div class="disclaimer-inner">
-      <div class="disclaimer-icon">⚠️</div>
+      <div class="disclaimer-bar"></div>
       <div class="disclaimer-content">
         <h2>Un outil d'aide, pas un substitut au skipper</h2>
         <p>
@@ -663,7 +611,6 @@
           <strong>NMEA®</strong> et <strong>NMEA 2000®</strong> sont des marques et/ou standards
           associés à la National Marine Electronics Association.
           Kornog n'est pas affiliée à la National Marine Electronics Association.
-          La mention de ces standards est fournie à titre indicatif de compatibilité technique potentielle.
         </div>
       </div>
     </div>
@@ -688,44 +635,35 @@
         </p>
 
         <div class="contact-links">
-          <a href="mailto:kornog@mailo.com" class="contact-link">
-            <span class="contact-link-icon">✉️</span>
-            <span>kornog@mailo.com</span>
-          </a>
-          <!-- TODO : Remplacer l'URL par votre dépôt GitHub réel -->
+          <a href="mailto:kornog@mailo.com" class="contact-link">kornog@mailo.com</a>
+          <!-- TODO : Mettre à jour avec le lien vers le bon repo -->
           <a href="https://github.com/kornog-systems"
              class="contact-link" target="_blank" rel="noopener noreferrer">
-            <span class="contact-link-icon">⌨️</span>
-            <span>GitHub — code &amp; releases</span>
+            GitHub — code &amp; releases
           </a>
-          <!-- TODO : Remplacer l'URL par votre profil LinkedIn réel -->
-          <a href="https://www.linkedin.com/in/TODO-votre-profil"
+          <!-- TODO : Remplacer TODO par votre identifiant LinkedIn -->
+          <a href="https://www.linkedin.com/in/TODO"
              class="contact-link" target="_blank" rel="noopener noreferrer">
-            <span class="contact-link-icon">💼</span>
-            <span>LinkedIn — actualités projet</span>
+            LinkedIn — actualités projet
           </a>
         </div>
       </div>
 
-      <!-- Formulaire mailto (fonctionne sans backend) -->
       <div class="contact-form reveal">
         <h3>Envoyer un message</h3>
         <!--
-          Ce formulaire construit un lien mailto: et ouvre le client mail de l'utilisateur.
-          Pour un vrai formulaire sans client mail local, utilisez Formspree :
-            <form action="https://formspree.io/f/VOTRE_ID" method="POST">
-          et supprimez l'attribut onsubmit et la fonction handleContactForm.
+          Ce formulaire ouvre le client mail avec mailto:.
+          Pour un formulaire sans client mail, utilisez Formspree :
+          <form action="https://formspree.io/f/VOTRE_ID" method="POST">
         -->
         <form id="contactForm">
           <div class="form-group">
             <label for="name">Nom</label>
-            <input type="text" id="name" name="name"
-                   placeholder="Votre nom" required autocomplete="name">
+            <input type="text" id="name" name="name" placeholder="Votre nom" required autocomplete="name">
           </div>
           <div class="form-group">
             <label for="email">E-mail</label>
-            <input type="email" id="email" name="email"
-                   placeholder="votre@email.com" required autocomplete="email">
+            <input type="email" id="email" name="email" placeholder="votre@email.com" required autocomplete="email">
           </div>
           <div class="form-group">
             <label for="subject">Sujet</label>
@@ -739,15 +677,10 @@
           </div>
           <div class="form-group">
             <label for="message">Message</label>
-            <textarea id="message" name="message"
-                      placeholder="Votre message…" required></textarea>
+            <textarea id="message" name="message" placeholder="Votre message…" required></textarea>
           </div>
-          <button type="submit" class="btn btn--primary form-submit">
-            Envoyer le message
-          </button>
-          <div class="form-success">
-            Votre client mail va s'ouvrir. Merci pour votre message !
-          </div>
+          <button type="submit" class="btn btn--primary form-submit">Envoyer le message</button>
+          <div class="form-success">Votre client mail va s'ouvrir. Merci !</div>
         </form>
       </div>
 
@@ -765,12 +698,11 @@
 
       <div class="footer-brand">
         <div class="logo-fallback">
-          <span class="logo-fallback-icon">⚓</span>Kornog
+          <span class="logo-fallback-mark">K</span>Kornog
         </div>
         <p>Application de navigation embarquée pour voiliers.
            Instrumentation, routage, alarmes et analyse dans une interface claire
            sur téléphone ou tablette.</p>
-        <!-- TODO : Mettre à jour l'année si nécessaire -->
         <p class="footer-copy">© 2025 Kornog — Félicien Moquet — Tous droits réservés</p>
       </div>
 
@@ -799,11 +731,10 @@
       <div class="footer-col">
         <h5>Liens</h5>
         <ul>
-          <!-- TODO : Mettre les vraies URLs -->
           <li><a href="https://github.com/kornog-systems" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <!-- TODO : Remplacer TODO par votre identifiant LinkedIn -->
           <li><a href="https://linkedin.com/in/TODO" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
           <li><a href="mailto:kornog@mailo.com">kornog@mailo.com</a></li>
-          <!-- <li><a href="https://play.google.com/store/apps/details?id=TODO" target="_blank">Google Play</a></li> -->
         </ul>
       </div>
 
@@ -815,12 +746,12 @@
         Ne remplace pas les cartes réglementaires ni les instruments de bord.
       </span>
       <div class="footer-social">
-        <!-- TODO : Mettre les vraies URLs -->
         <a href="https://github.com/kornog-systems" aria-label="GitHub" title="GitHub"
            target="_blank" rel="noopener noreferrer">GH</a>
+        <!-- TODO : Remplacer TODO par votre identifiant LinkedIn -->
         <a href="https://linkedin.com/in/TODO" aria-label="LinkedIn" title="LinkedIn"
            target="_blank" rel="noopener noreferrer">Li</a>
-        <a href="mailto:kornog@mailo.com" aria-label="Email" title="Email">✉</a>
+        <a href="mailto:kornog@mailo.com" aria-label="Email" title="Email">@</a>
       </div>
     </div>
   </div>
