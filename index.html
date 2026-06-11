@@ -31,7 +31,6 @@
 
     <nav aria-label="Navigation principale">
       <a href="#fonctionnalites">Fonctionnalités</a>
-      <a href="#captures">Captures</a>
       <a href="#telechargements">Téléchargements</a>
       <a href="legal.html">Légal</a>
       <a href="#contact">Contact</a>
@@ -49,9 +48,7 @@
 
 <div class="mobile-nav" id="mobile-nav">
   <a href="#fonctionnalites">Fonctionnalités</a>
-  <a href="#captures">Captures</a>
   <a href="#telechargements">Téléchargements</a>
-  <a href="#projet">Projet</a>
   <a href="legal.html">Légal</a>
   <a href="#contact">Contact</a>
   <a href="#telechargements" class="btn btn--primary">Télécharger l'application</a>
@@ -63,36 +60,37 @@
 ══════════════════════════════════════ -->
 <section class="hero" id="accueil">
   <div class="container">
+    <div class="hero-inner">
 
-    <!-- Image en grand, centrée, première chose visible -->
-    <div class="hero-visual">
-      <img
-        src="assets/Images/multi_os.png"
-        alt="Kornog sur smartphone, tablette et ordinateur"
-        class="hero-mockup">
-    </div>
+      <div class="hero-text">
+        <span class="badge badge--magenta">Application de navigation mobile</span>
+        <h1 class="hero-title">
+          Les données de votre voilier,<br>
+          <span class="accent">en temps réel</span>
+        </h1>
+        <p class="hero-subtitle">
+          Kornog centralise les données du bord, les alarmes, la météo, le routage
+          et l'analyse dans une interface claire, pensée pour une utilisation embarquée
+          sur smartphone, tablette ou ordinateur.
+        </p>
+        <div class="btn-group hero-buttons">
+          <a href="#telechargements" class="btn btn--primary btn--lg">Télécharger</a>
+          <a href="#fonctionnalites" class="btn btn--outline btn--lg">Voir les fonctionnalités</a>
+        </div>
+        <div class="hero-meta">
+          <span class="hero-meta-item hero-meta-free">100% gratuit</span>
+          <span class="hero-meta-item">Sur smartphone, tablette ou ordinateur</span>
+          <span class="hero-meta-item">Connexion Wi-Fi / NMEA</span>
+        </div>
+      </div>
 
-    <!-- Texte centré en dessous -->
-    <div class="hero-text">
-      <span class="badge badge--magenta">Application de navigation mobile</span>
-      <h1 class="hero-title">
-        Les données de votre voilier,<br>
-        <span class="accent">en temps réel</span>
-      </h1>
-      <p class="hero-subtitle">
-        Kornog centralise les données du bord, les alarmes, la météo, le routage
-        et l'analyse dans une interface claire, pensée pour une utilisation embarquée
-        sur smartphone, tablette ou ordinateur.
-      </p>
-      <div class="btn-group hero-buttons">
-        <a href="#telechargements" class="btn btn--primary btn--lg">Télécharger</a>
-        <a href="#fonctionnalites" class="btn btn--outline btn--lg">Voir les fonctionnalités</a>
+      <div class="hero-media">
+        <img
+          src="assets/Images/multi_os.png"
+          alt="Kornog sur smartphone, tablette et ordinateur"
+          class="hero-mockup">
       </div>
-      <div class="hero-meta">
-        <span class="hero-meta-item hero-meta-free">100% gratuit</span>
-        <span class="hero-meta-item">Sur smartphone, tablette ou ordinateur</span>
-        <span class="hero-meta-item">Connexion Wi-Fi / NMEA</span>
-      </div>
+
     </div>
   </div>
 </section>
@@ -172,74 +170,119 @@
     <div class="section-header reveal">
       <span class="badge badge--navy">Fonctionnalités</span>
       <h2>Instrumentation, routage, alertes et analyse</h2>
-      <p>Kornog permet d'afficher et d'exploiter les données disponibles à bord
-         dans une interface pensée pour la navigation embarquée.</p>
+      <p>Sélectionnez une capture pour découvrir la fonctionnalité en détail.</p>
     </div>
 
-    <div class="features-grid">
-
-      <div class="feature-card reveal">
-        <h3>Données en temps réel</h3>
-        <p>Affichage des données reçues depuis une passerelle compatible : vent, vitesse, cap,
-           GPS, AIS, profondeur et autres données selon la configuration à bord.</p>
-        <span class="feature-tag">Temps réel</span>
+    <!-- Vitrine principale : capture + description -->
+    <div class="showcase reveal">
+      <div class="showcase-photo">
+        <img id="showcaseImg"
+             src="assets/Images/images%20telephone/trace_tes_routes.jpg"
+             alt="Trace tes routes">
       </div>
-
-      <div class="feature-card reveal">
-        <h3>Interface embarquée</h3>
-        <p>Interface pensée pour une utilisation à bord, sur téléphone ou tablette,
-           avec une lecture claire et hiérarchisée des informations importantes.</p>
-        <span class="feature-tag">Mobilité</span>
+      <div class="showcase-info">
+        <span class="feature-tag" id="showcaseTag">Navigation</span>
+        <h3 id="showcaseTitle">Trace tes routes</h3>
+        <p id="showcaseDesc">Créez vos routes de navigation, posez des waypoints et suivez votre progression cap après cap sur la carte.</p>
+        <div class="showcase-nav">
+          <button class="gallery-btn" id="galleryPrev" aria-label="Fonctionnalité précédente">&#8592;</button>
+          <button class="gallery-btn" id="galleryNext" aria-label="Fonctionnalité suivante">&#8594;</button>
+        </div>
       </div>
+    </div>
 
-      <div class="feature-card reveal">
-        <h3>Routage et aide à la décision</h3>
-        <p>Fonctions de routage et d'aide à la décision pour la navigation côtière,
-           avec une évolution progressive vers des analyses plus avancées.</p>
-        <span class="feature-tag">Routage</span>
-      </div>
+    <!-- Bande de miniatures (défilement horizontal) -->
+    <div class="features-strip" id="featuresStrip">
 
-      <div class="feature-card reveal">
-        <h3>Météo GRIB</h3>
-        <p>Affichage de fichiers météo GRIB : vent, rafales, vagues et autres données
-           selon les fichiers utilisés et téléchargés.</p>
-        <span class="feature-tag">Météo</span>
-      </div>
+      <button class="feature-thumb active"
+              data-src="assets/Images/images%20telephone/trace_tes_routes.jpg"
+              data-title="Trace tes routes"
+              data-tag="Navigation"
+              data-desc="Créez vos routes de navigation, posez des waypoints et suivez votre progression cap après cap sur la carte.">
+        <img src="assets/Images/images%20telephone/trace_tes_routes.jpg" alt="Trace tes routes" loading="lazy">
+        <span>Trace tes routes</span>
+      </button>
 
-      <div class="feature-card reveal">
-        <h3>Alarmes embarquées</h3>
-        <p>Alarmes utiles pour le mouillage, le compte à rebours de régate, l'AIS
-           ou certains seuils de navigation configurés par l'utilisateur.</p>
-        <span class="feature-tag">Alarmes</span>
-      </div>
+      <button class="feature-thumb"
+              data-src="assets/Images/images%20telephone/alarmes_ais.jpg"
+              data-title="Alarmes AIS"
+              data-tag="AIS"
+              data-desc="Suivez le trafic environnant et configurez des alarmes sur les navires présentant un risque de collision.">
+        <img src="assets/Images/images%20telephone/alarmes_ais.jpg" alt="Alarmes AIS" loading="lazy">
+        <span>Alarmes AIS</span>
+      </button>
 
-      <div class="feature-card reveal">
-        <h3>Historique des navigations</h3>
-        <p>Enregistrement des sessions de navigation pour garder une trace des sorties
-           et pouvoir revenir sur les données importantes après la navigation.</p>
-        <span class="feature-tag">Historique</span>
-      </div>
+      <button class="feature-thumb"
+              data-src="assets/Images/images%20telephone/alarmes_mouillage_et_bien_plus%20encore.jpg"
+              data-title="Alarmes mouillage &amp; plus"
+              data-tag="Alarmes"
+              data-desc="Alarme de dérapage au mouillage, seuils configurables et alertes personnalisées pour naviguer sereinement.">
+        <img src="assets/Images/images%20telephone/alarmes_mouillage_et_bien_plus%20encore.jpg" alt="Alarmes mouillage" loading="lazy">
+        <span>Alarmes mouillage</span>
+      </button>
 
-      <div class="feature-card reveal">
-        <h3>Analyse des tendances de vent</h3>
-        <p>Visualisation et analyse des évolutions du vent pour mieux comprendre
-           les conditions rencontrées pendant la navigation.</p>
-        <span class="feature-tag">Analyse</span>
-      </div>
+      <button class="feature-thumb"
+              data-src="assets/Images/images%20telephone/telecharge_la_meteo.jpg"
+              data-title="Télécharge la météo"
+              data-tag="Météo"
+              data-desc="Téléchargez et affichez des fichiers météo GRIB — vent, rafales, vagues — même hors connexion.">
+        <img src="assets/Images/images%20telephone/telecharge_la_meteo.jpg" alt="Télécharge la météo" loading="lazy">
+        <span>Météo GRIB</span>
+      </button>
 
-      <div class="feature-card reveal">
-        <h3>Compatibilité passerelles</h3>
-        <p>Réception des données via Wi-Fi depuis des passerelles ou instruments compatibles.
-           Compatible NMEA 0183 et Signal K selon la configuration matérielle à bord.</p>
-        <span class="feature-tag">Interopérabilité</span>
-      </div>
+      <button class="feature-thumb"
+              data-src="assets/Images/images%20telephone/lance_des_routage_%C3%A0_partir_des_gribs.jpg"
+              data-title="Routage GRIB"
+              data-tag="Routage"
+              data-desc="Calculez des routes optimisées depuis les fichiers météo GRIB : profitez des meilleures fenêtres de vent.">
+        <img src="assets/Images/images%20telephone/lance_des_routage_%C3%A0_partir_des_gribs.jpg" alt="Routage GRIB" loading="lazy">
+        <span>Routage GRIB</span>
+      </button>
 
-      <div class="feature-card reveal">
-        <h3>Surveillance AIS</h3>
-        <p>Affichage et surveillance des données AIS pour une meilleure connaissance
-           du trafic environnant, selon les données reçues depuis les instruments à bord.</p>
-        <span class="feature-tag">AIS</span>
-      </div>
+      <button class="feature-thumb"
+              data-src="assets/Images/images%20telephone/compte_%C3%A0_rebour_r%C3%A9gate.jpg"
+              data-title="Compte à rebours régate"
+              data-tag="Régate"
+              data-desc="Chronomètre de départ précis pour la régate, synchronisé avec les données du bateau.">
+        <img src="assets/Images/images%20telephone/compte_%C3%A0_rebour_r%C3%A9gate.jpg" alt="Compte à rebours régate" loading="lazy">
+        <span>Régate</span>
+      </button>
+
+      <button class="feature-thumb"
+              data-src="assets/Images/images%20telephone/choisi_tes_donn%C3%A9es.jpg"
+              data-title="Personnalise ton affichage"
+              data-tag="Instrumentation"
+              data-desc="Choisissez les données à afficher selon vos besoins : vitesse, cap, vent, profondeur et plus encore.">
+        <img src="assets/Images/images%20telephone/choisi_tes_donn%C3%A9es.jpg" alt="Personnalise l'affichage" loading="lazy">
+        <span>Données</span>
+      </button>
+
+      <button class="feature-thumb"
+              data-src="assets/Images/images%20telephone/historique_de_session.jpg"
+              data-title="Historique de session"
+              data-tag="Historique"
+              data-desc="Chaque session est enregistrée automatiquement. Revenez sur vos trajectoires et analysez vos données.">
+        <img src="assets/Images/images%20telephone/historique_de_session.jpg" alt="Historique de session" loading="lazy">
+        <span>Historique</span>
+      </button>
+
+      <button class="feature-thumb"
+              data-src="assets/Images/images%20telephone/affichage_de_nuit.jpg"
+              data-title="Affichage de nuit"
+              data-tag="Interface"
+              data-desc="Interface adaptée à la navigation nocturne : affichage sombre qui préserve la vision de nuit du skipper.">
+        <img src="assets/Images/images%20telephone/affichage_de_nuit.jpg" alt="Affichage de nuit" loading="lazy">
+        <span>Mode nuit</span>
+      </button>
+
+      <button class="feature-thumb"
+              data-src="assets/Images/images%20telephone/utilise_tes%20polaires.jpg"
+              data-title="Polaires du voilier"
+              data-tag="Performance"
+              data-desc="Importez les polaires de votre voilier pour analyser vos performances réelles et optimiser vos réglages de voiles.">
+        <img src="assets/Images/images%20telephone/utilise_tes%20polaires.jpg" alt="Polaires du voilier" loading="lazy">
+        <span>Polaires</span>
+      </button>
 
     </div>
 
@@ -247,73 +290,6 @@
       Les fonctionnalités disponibles peuvent dépendre du matériel installé à bord,
       du type de passerelle utilisée et des données effectivement reçues par l'application.
     </p>
-  </div>
-</section>
-
-
-<!-- ══════════════════════════════════════
-     CAPTURES D'ÉCRAN
-══════════════════════════════════════ -->
-<section class="section section--gray" id="captures">
-  <div class="container">
-    <div class="section-header reveal">
-      <span class="badge badge--navy">Captures d'écran</span>
-      <h2>Une interface pensée pour le bord</h2>
-      <p>Des écrans lisibles, des données hiérarchisées et une navigation fluide
-         pour garder l'attention sur l'essentiel.</p>
-    </div>
-
-    <div class="screenshots-gallery reveal">
-      <div class="gallery-track" id="galleryTrack">
-        <!-- TODO : Mettre à jour les textes alt avec les descriptions réelles de chaque écran -->
-        <div class="gallery-item">
-          <img src="assets/Images/images%20telephone/1000019521.jpg" alt="Tableau de bord instruments" loading="lazy">
-          <div class="gallery-label">Tableau de bord</div>
-        </div>
-        <div class="gallery-item">
-          <img src="assets/Images/images%20telephone/1000019522.jpg" alt="Données de vent" loading="lazy">
-          <div class="gallery-label">Vent &amp; données</div>
-        </div>
-        <div class="gallery-item">
-          <img src="assets/Images/images%20telephone/1000019523.jpg" alt="Carte et route" loading="lazy">
-          <div class="gallery-label">Carte &amp; route</div>
-        </div>
-        <div class="gallery-item">
-          <img src="assets/Images/images%20telephone/1000019526.jpg" alt="Alarmes" loading="lazy">
-          <div class="gallery-label">Alarmes</div>
-        </div>
-        <div class="gallery-item">
-          <img src="assets/Images/images%20telephone/1000019527.jpg" alt="Analyse graphique" loading="lazy">
-          <div class="gallery-label">Analyse</div>
-        </div>
-        <div class="gallery-item">
-          <img src="assets/Images/images%20telephone/1000019528.jpg" alt="Historique de session" loading="lazy">
-          <div class="gallery-label">Historique</div>
-        </div>
-        <div class="gallery-item">
-          <img src="assets/Images/images%20telephone/1000019529.jpg" alt="Météo GRIB" loading="lazy">
-          <div class="gallery-label">Météo</div>
-        </div>
-        <div class="gallery-item">
-          <img src="assets/Images/images%20telephone/1000019530.jpg" alt="Vue AIS" loading="lazy">
-          <div class="gallery-label">AIS</div>
-        </div>
-        <div class="gallery-item wide">
-          <img src="assets/Images/images%20Tablette/1.jpeg" alt="Vue tablette" loading="lazy">
-          <div class="gallery-label">Vue tablette</div>
-        </div>
-        <div class="gallery-item wide">
-          <img src="assets/Images/images%20Tablette/2.jpeg" alt="Vue tablette — données" loading="lazy">
-          <div class="gallery-label">Tablette — données</div>
-        </div>
-      </div>
-
-      <div class="gallery-controls">
-        <button class="gallery-btn" id="galleryPrev" aria-label="Capture précédente">&#8592;</button>
-        <div class="gallery-dots" id="galleryDots"></div>
-        <button class="gallery-btn" id="galleryNext" aria-label="Capture suivante">&#8594;</button>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -583,7 +559,6 @@
         <h5>Navigation</h5>
         <ul>
           <li><a href="#fonctionnalites">Fonctionnalités</a></li>
-          <li><a href="#captures">Captures d'écran</a></li>
           <li><a href="#telechargements">Téléchargements</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>

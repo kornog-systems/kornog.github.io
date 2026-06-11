@@ -40,48 +40,40 @@ const revealObserver = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
-/* ── Galerie de captures ── */
-const track  = document.getElementById('galleryTrack');
-const dots   = document.getElementById('galleryDots');
-const prev   = document.getElementById('galleryPrev');
-const next   = document.getElementById('galleryNext');
+/* ── Showcase fonctionnalités ── */
+const thumbs       = Array.from(document.querySelectorAll('.feature-thumb'));
+const showcaseImg  = document.getElementById('showcaseImg');
+const showcaseTitle = document.getElementById('showcaseTitle');
+const showcaseDesc  = document.getElementById('showcaseDesc');
+const showcaseTag   = document.getElementById('showcaseTag');
+const btnPrev      = document.getElementById('galleryPrev');
+const btnNext      = document.getElementById('galleryNext');
 
-if (track && dots) {
-  const items      = Array.from(track.querySelectorAll('.gallery-item'));
-  const itemCount  = items.length;
-  let   current    = 0;
+if (thumbs.length && showcaseImg) {
+  let current = 0;
 
-  /* Créer les points */
-  items.forEach((_, i) => {
-    const dot = document.createElement('button');
-    dot.className = 'gallery-dot' + (i === 0 ? ' active' : '');
-    dot.setAttribute('aria-label', `Capture ${i + 1}`);
-    dot.addEventListener('click', () => scrollTo(i));
-    dots.appendChild(dot);
-  });
+  function activateFeature(idx) {
+    current = (idx + thumbs.length) % thumbs.length;
+    const t = thumbs[current];
 
-  function scrollTo(idx) {
-    current = Math.max(0, Math.min(idx, itemCount - 1));
-    items[current].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
-    dots.querySelectorAll('.gallery-dot').forEach((d, i) => d.classList.toggle('active', i === current));
+    showcaseImg.style.opacity = '0';
+    setTimeout(() => {
+      showcaseImg.src = t.dataset.src;
+      showcaseImg.alt = t.dataset.title;
+      showcaseImg.style.opacity = '1';
+    }, 150);
+
+    showcaseTitle.textContent = t.dataset.title;
+    showcaseDesc.textContent  = t.dataset.desc;
+    showcaseTag.textContent   = t.dataset.tag;
+
+    thumbs.forEach((th, i) => th.classList.toggle('active', i === current));
+    t.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
   }
 
-  prev.addEventListener('click', () => scrollTo(current - 1));
-  next.addEventListener('click', () => scrollTo(current + 1));
-
-  /* Mise à jour du point actif au scroll natif (swipe) */
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        const idx = items.indexOf(entry.target);
-        if (idx !== -1) {
-          current = idx;
-          dots.querySelectorAll('.gallery-dot').forEach((d, i) => d.classList.toggle('active', i === current));
-        }
-      }
-    });
-  }, { root: track, threshold: 0.6 });
-  items.forEach(item => io.observe(item));
+  thumbs.forEach((th, i) => th.addEventListener('click', () => activateFeature(i)));
+  btnPrev?.addEventListener('click', () => activateFeature(current - 1));
+  btnNext?.addEventListener('click', () => activateFeature(current + 1));
 }
 
 /* ── Formulaire de contact (mailto fallback) ── */

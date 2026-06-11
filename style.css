@@ -184,29 +184,28 @@ nav a:hover { color: var(--text); background: var(--gray-50); }
 ──────────────────────────────────────── */
 .hero {
   background: var(--white);
-  padding: calc(var(--header-h) + 2.5rem) 0 5rem;
+  padding: calc(var(--header-h) + 3rem) 0 5rem;
   border-bottom: 1px solid var(--border);
-  text-align: center;
 }
 
-/* Image multi-OS : pleine largeur, centrée, en premier */
-.hero-visual {
-  margin-bottom: 3rem;
+.hero-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
 }
+
+.hero-media { display: flex; justify-content: center; }
+
 .hero-mockup {
-  max-width: 960px; width: 100%;
+  max-width: 100%; width: 100%;
   object-fit: contain;
-  margin: 0 auto;
   border-radius: 12px;
   box-shadow: var(--shadow-lg);
   display: block;
 }
 
-/* Texte centré sous l'image */
-.hero-text {
-  max-width: 700px;
-  margin: 0 auto;
-}
+.hero-text { }
 
 .hero-title         { margin-bottom: 1.4rem; color: var(--text); }
 .hero-title .accent { color: var(--magenta); }
@@ -214,12 +213,12 @@ nav a:hover { color: var(--text); background: var(--gray-50); }
 .hero-subtitle {
   font-size: clamp(1rem, 1.5vw, 1.1rem);
   color: var(--text-muted); line-height: 1.75;
-  margin: 0 auto 2rem;
+  margin-bottom: 2rem;
 }
 
-.hero-buttons  { gap: 1rem; margin-bottom: 2rem; justify-content: center; }
+.hero-buttons  { gap: 1rem; margin-bottom: 2rem; justify-content: flex-start; }
 
-.hero-meta     { display: flex; flex-wrap: wrap; gap: .75rem; justify-content: center; }
+.hero-meta     { display: flex; flex-wrap: wrap; gap: .75rem; justify-content: flex-start; }
 .hero-meta-item {
   font-size: .8rem; color: var(--text-muted);
   padding: .3rem .75rem;
@@ -271,29 +270,96 @@ nav a:hover { color: var(--text); background: var(--gray-50); }
 .solution-card:hover { box-shadow: var(--shadow-sm); }
 
 /* ────────────────────────────────────────
-   9. FONCTIONNALITÉS
+   9. FONCTIONNALITÉS — SHOWCASE
 ──────────────────────────────────────── */
-.features-grid {
-  display: grid; grid-template-columns: repeat(3,1fr); gap: 1.25rem;
+.showcase {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 3.5rem;
+  align-items: center;
+  margin-bottom: 2.5rem;
 }
-.feature-card {
-  background: var(--white); border: 1px solid var(--border);
-  border-top: 3px solid var(--magenta);
-  border-radius: 0 0 var(--radius) var(--radius);
-  padding: 1.6rem;
-  transition: box-shadow var(--transition), transform var(--transition);
+
+.showcase-photo img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: var(--shadow-lg);
+  transition: opacity .25s ease;
+  aspect-ratio: 9 / 19.5;
+  object-fit: cover;
+  display: block;
 }
-.feature-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); }
-.feature-card h3 { font-size: .975rem; font-weight: 700; margin-bottom: .45rem; }
-.feature-card p  { font-size: .875rem; color: var(--text-muted); line-height: 1.6; }
+
+.showcase-info { }
+
+.showcase-info h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: .6rem 0 .85rem;
+  color: var(--text);
+}
+
+.showcase-info p {
+  color: var(--text-muted);
+  line-height: 1.75;
+  margin-bottom: 1.75rem;
+  font-size: 1rem;
+}
+
+.showcase-nav {
+  display: flex; gap: .75rem;
+}
+
+/* Bande de miniatures */
+.features-strip {
+  display: flex;
+  gap: .75rem;
+  overflow-x: auto;
+  padding: .5rem 0 1rem;
+  scrollbar-width: none;
+  margin-bottom: .5rem;
+}
+.features-strip::-webkit-scrollbar { display: none; }
+
+.feature-thumb {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .4rem;
+  padding: .4rem;
+  border: 2px solid transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  background: none;
+  transition: border-color var(--transition), background var(--transition);
+}
+.feature-thumb img {
+  width: 56px;
+  height: 96px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.feature-thumb span {
+  font-size: .62rem;
+  font-weight: 500;
+  text-align: center;
+  max-width: 70px;
+  color: var(--text-muted);
+  line-height: 1.3;
+}
+.feature-thumb:hover { border-color: var(--gray-300); }
+.feature-thumb.active { border-color: var(--magenta); background: var(--magenta-glow); }
+.feature-thumb.active span { color: var(--magenta); font-weight: 700; }
+
 .feature-tag {
   display: inline-block; font-size: .68rem; font-weight: 700;
   text-transform: uppercase; letter-spacing: .06em;
   color: var(--magenta); background: var(--magenta-glow);
-  padding: .18rem .5rem; border-radius: 4px; margin-top: .75rem;
+  padding: .18rem .5rem; border-radius: 4px;
 }
 .features-note {
-  text-align: center; margin-top: 2rem;
+  text-align: center; margin-top: 1.5rem;
   font-size: .82rem; color: var(--text-muted); font-style: italic;
 }
 
@@ -675,11 +741,9 @@ nav a:hover { color: var(--text); background: var(--gray-50); }
    20. RESPONSIVE
 ──────────────────────────────────────── */
 @media (max-width: 1024px) {
-  .features-grid  { grid-template-columns: repeat(2,1fr); }
   .audience-grid  { grid-template-columns: repeat(2,1fr); }
   .footer-inner   { grid-template-columns: 1fr 1fr; gap: 1.75rem; }
-  .project-layout { grid-template-columns: 1fr; gap: 2.5rem; }
-  .project-stats  { grid-template-columns: repeat(4,1fr); }
+  .showcase       { grid-template-columns: 220px 1fr; gap: 2.5rem; }
 }
 
 @media (max-width: 768px) {
@@ -699,11 +763,11 @@ nav a:hover { color: var(--text); background: var(--gray-50); }
   .problem-grid      { grid-template-columns: 1fr; max-width: 480px; }
   .solution-inner    { grid-template-columns: 1fr; gap: 2rem; }
   .solution-cards    { grid-template-columns: 1fr; }
-  .features-grid     { grid-template-columns: 1fr; }
-  .gallery-item      { width: 210px; }
-  .gallery-item img  { height: 380px; }
-  .gallery-item.wide { width: 320px; }
-  .gallery-item.wide img { height: 300px; }
+  .showcase          { grid-template-columns: 1fr; }
+  .showcase-photo    { text-align: center; }
+  .showcase-photo img { max-width: 240px; margin: 0 auto; aspect-ratio: unset; height: 420px; }
+  .showcase-info h3  { font-size: 1.2rem; }
+  .showcase-nav      { justify-content: flex-start; }
   .downloads-grid    { grid-template-columns: repeat(2,1fr); }
   .project-stats     { grid-template-columns: repeat(2,1fr); }
   .audience-grid     { grid-template-columns: 1fr; }
