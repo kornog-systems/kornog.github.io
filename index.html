@@ -64,45 +64,35 @@
 <section class="hero" id="accueil">
   <div class="container">
 
-    <div class="hero-inner">
+    <!-- Image en grand, centrée, première chose visible -->
+    <div class="hero-visual">
+      <img
+        src="assets/Images/multi_os.png"
+        alt="Kornog sur smartphone, tablette et ordinateur"
+        class="hero-mockup">
+    </div>
 
-      <div class="hero-text">
-        <span class="badge badge--magenta">Application de navigation mobile</span>
-        <h1 class="hero-title">
-          Les données de votre voilier,<br>
-          <span class="accent">en temps réel</span>
-        </h1>
-        <p class="hero-subtitle">
-          Kornog centralise les données du bord, les alarmes, la météo, le routage
-          et l'analyse dans une interface claire, pensée pour une utilisation embarquée
-          sur smartphone, tablette ou ordinateur.
-        </p>
-        <div class="btn-group hero-buttons">
-          <a href="#telechargements" class="btn btn--primary btn--lg">Télécharger</a>
-          <a href="#fonctionnalites" class="btn btn--outline btn--lg">Voir les fonctionnalités</a>
-        </div>
-        <div class="hero-meta">
-          <span class="hero-meta-item">Sur smartphone, tablette ou ordinateur</span>
-          <span class="hero-meta-item">Connexion Wi-Fi / NMEA</span>
-        </div>
+    <!-- Texte centré en dessous -->
+    <div class="hero-text">
+      <span class="badge badge--magenta">Application de navigation mobile</span>
+      <h1 class="hero-title">
+        Les données de votre voilier,<br>
+        <span class="accent">en temps réel</span>
+      </h1>
+      <p class="hero-subtitle">
+        Kornog centralise les données du bord, les alarmes, la météo, le routage
+        et l'analyse dans une interface claire, pensée pour une utilisation embarquée
+        sur smartphone, tablette ou ordinateur.
+      </p>
+      <div class="btn-group hero-buttons">
+        <a href="#telechargements" class="btn btn--primary btn--lg">Télécharger</a>
+        <a href="#fonctionnalites" class="btn btn--outline btn--lg">Voir les fonctionnalités</a>
       </div>
-
-      <div class="hero-media">
-        <!--
-          TODO : Choisir la meilleure capture à mettre en avant ici.
-          Tablette paysage : assets/Images/images Tablette/10pouces.png
-          Téléphone portrait : assets/Images/images telephone/1000019521.jpg
-        -->
-        <img
-          src="assets/Images/multi_os.png"
-          alt="Kornog sur smartphone, tablette et ordinateur"
-          class="hero-mockup"
-          onerror="this.style.display='none';document.querySelector('.hero-placeholder').style.display='flex';">
-        <div class="hero-placeholder" style="display:none">
-          <span style="font-size:2rem; color:var(--gray-300);">Capture de l'application</span>
-        </div>
+      <div class="hero-meta">
+        <span class="hero-meta-item hero-meta-free">100% gratuit</span>
+        <span class="hero-meta-item">Sur smartphone, tablette ou ordinateur</span>
+        <span class="hero-meta-item">Connexion Wi-Fi / NMEA</span>
       </div>
-
     </div>
   </div>
 </section>
