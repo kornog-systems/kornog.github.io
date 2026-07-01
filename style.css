@@ -253,6 +253,10 @@ nav a:hover { color: var(--text); background: var(--gray-50); }
 .solution-text p  { color: var(--text-muted); margin-bottom: 1rem; }
 .solution-text .btn { margin-top: .5rem; }
 
+.solution-note {
+  text-align: center; margin-top: 2rem;
+  font-size: .82rem; color: var(--text-muted); font-style: italic;
+}
 .solution-cards { display: grid; grid-template-columns: repeat(2,1fr); gap: .65rem; }
 .solution-card {
   background: var(--white); border: 1px solid var(--border);
