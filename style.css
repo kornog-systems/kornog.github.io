@@ -728,6 +728,33 @@ nav a:hover { color: var(--text); background: var(--gray-50); }
 .back-link:hover { text-decoration: underline; }
 
 /* ────────────────────────────────────────
+   ACTUALITÉS
+──────────────────────────────────────── */
+.articles-page { padding: 4rem 0 6rem; }
+.article-list  { display: flex; flex-direction: column; gap: 2rem; max-width: 800px; margin: 0 auto; }
+
+.article-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--magenta);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 2rem 2.25rem;
+  transition: box-shadow var(--transition);
+}
+.article-card:hover { box-shadow: var(--shadow-md); }
+
+.article-meta  { display: flex; align-items: center; gap: .75rem; margin-bottom: .85rem; }
+.article-date  { font-size: .8rem; color: var(--text-muted); }
+.article-title { font-size: 1.2rem; font-weight: 700; margin-bottom: .75rem; color: var(--text); line-height: 1.4; }
+.article-body  { color: var(--text-muted); line-height: 1.75; font-size: .95rem; }
+.article-body p + p { margin-top: .65rem; }
+
+.no-articles {
+  text-align: center; padding: 4rem 1rem;
+  color: var(--text-muted); font-size: .95rem; font-style: italic;
+}
+
+/* ────────────────────────────────────────
    19. REVEAL AU SCROLL
 ──────────────────────────────────────── */
 .reveal {

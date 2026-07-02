@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Actualités — Kornog</title>
+  <meta name="description" content="Suivez l'évolution de Kornog — nouvelles versions, fonctionnalités et annonces.">
+  <link rel="icon" type="image/png" href="assets/Images/Kornog%20icone.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ══════════════════════════════════════
+     HEADER
+══════════════════════════════════════ -->
+<header class="header" id="header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo" aria-label="Kornog — Accueil">
+      <img src="assets/Images/icone+nom.png" alt="Kornog"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+      <span class="logo-fallback" style="display:none">Kornog</span>
+    </a>
+    <nav aria-label="Navigation principale">
+      <a href="index.html#fonctionnalites">Fonctionnalités</a>
+      <a href="index.html#telechargements">Téléchargements</a>
+      <a href="actualites.html" style="color:var(--text)">Actualités</a>
+      <a href="legal.html">Légal</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+    <div class="header-cta">
+      <a href="index.html#telechargements" class="btn btn--primary btn--sm">Télécharger</a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobile-nav">
+  <a href="index.html#fonctionnalites">Fonctionnalités</a>
+  <a href="index.html#telechargements">Téléchargements</a>
+  <a href="actualites.html">Actualités</a>
+  <a href="legal.html">Légal</a>
+  <a href="index.html#contact">Contact</a>
+  <a href="index.html#telechargements" class="btn btn--primary">Télécharger l'application</a>
+</div>
+
+<!-- ══════════════════════════════════════
+     PAGE HEADER
+══════════════════════════════════════ -->
+<div class="page-header">
+  <div class="container">
+    <a href="index.html" class="back-link" style="color:rgba(255,255,255,.55)">← Retour au site</a>
+    <span class="badge badge--white">Actualités</span>
+    <h1>Dernières nouvelles</h1>
+    <p>Nouvelles versions, fonctionnalités et annonces autour de Kornog.</p>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════
+     ARTICLES
+     ─────────────────────────────────────
+     Pour ajouter un article, copier le
+     bloc <article> ci-dessous et le coller
+     EN PREMIER dans .article-list
+     (les plus récents en haut).
+══════════════════════════════════════ -->
+<div class="articles-page">
+  <div class="container">
+
+    <div class="article-list">
+
+      <!--
+      ┌─────────────────────────────────────────────
+      │ MODÈLE — copier/coller pour un nouvel article
+      └─────────────────────────────────────────────
+      <article class="article-card">
+        <div class="article-meta">
+          <span class="feature-tag">Catégorie</span>
+          <time class="article-date">JJ mois AAAA</time>
+        </div>
+        <h2 class="article-title">Titre de l'article</h2>
+        <div class="article-body">
+          <p>Premier paragraphe...</p>
+          <p>Deuxième paragraphe (optionnel)...</p>
+        </div>
+      </article>
+      -->
+
+      <article class="article-card">
+        <div class="article-meta">
+          <span class="feature-tag">Lancement</span>
+          <time class="article-date">Juillet 2026</time>
+        </div>
+        <h2 class="article-title">Kornog est disponible sur Google Play, iOS, Windows et Linux</h2>
+        <div class="article-body">
+          <p>Kornog est maintenant téléchargeable sur le Google Play Store pour Android,
+             ainsi qu'en version directe pour iOS, Windows et Linux depuis cette page.</p>
+          <p>L'application est en développement actif — n'hésitez pas à nous faire remonter
+             vos retours et suggestions via la section Contact.</p>
+        </div>
+      </article>
+
+    </div>
+
+  </div>
+</div>
+
+<!-- Footer minimal -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none; padding-top:0;">
+      <span>© 2025 Kornog — <a href="mailto:kornog@mailo.com" style="color:rgba(255,255,255,.55)">kornog@mailo.com</a></span>
+      <a href="index.html" style="color:rgba(255,255,255,.55); font-size:.82rem;">← Retour au site</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
