@@ -204,7 +204,7 @@ nav a:hover { color: var(--text); background: var(--gray-50); }
   display: block;
 }
 
-.hero-text { max-width: 700px; margin: 0 auto; }
+.hero-text { max-width: clamp(700px, 60vw, 1100px); margin: 0 auto; }
 
 .hero-title         { margin-bottom: 1.4rem; color: var(--text); }
 .hero-title .accent { color: var(--magenta); }
