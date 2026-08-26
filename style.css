@@ -336,7 +336,9 @@ nav a:hover { color: var(--text); background: var(--gray-50); }
 .feature-thumb img {
   width: 56px;
   height: 96px;
-  object-fit: cover;
+  object-fit: contain;
+  background: var(--gray-50);
+  padding: 6px;
   border-radius: 8px;
 }
 .feature-thumb span {
