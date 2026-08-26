@@ -194,7 +194,9 @@ nav a:hover { color: var(--text); background: var(--gray-50); }
 .hero-visual { margin-bottom: 3rem; }
 
 .hero-mockup {
-  max-width: 960px; width: 100%;
+  /* Allow a larger hero visual so the accueil fills wider screens */
+  max-width: min(1400px, 96vw);
+  width: 100%;
   object-fit: contain;
   margin: 0 auto;
   border-radius: 12px;
