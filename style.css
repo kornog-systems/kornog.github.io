@@ -281,11 +281,11 @@ nav a:hover { color: var(--text); background: var(--gray-50); }
 
 .showcase-photo img {
   width: 100%;
+  height: auto;
   border-radius: 20px;
   box-shadow: var(--shadow-lg);
   transition: opacity .25s ease;
-  aspect-ratio: 9 / 19.5;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
 }
 
@@ -791,7 +791,7 @@ nav a:hover { color: var(--text); background: var(--gray-50); }
   .solution-cards    { grid-template-columns: 1fr; }
   .showcase          { grid-template-columns: 1fr; }
   .showcase-photo    { text-align: center; }
-  .showcase-photo img { max-width: 240px; margin: 0 auto; aspect-ratio: unset; height: 420px; }
+  .showcase-photo img { max-width: 240px; margin: 0 auto; aspect-ratio: unset; height: auto; max-height: 420px; }
   .showcase-info h3  { font-size: 1.2rem; }
   .showcase-nav      { justify-content: flex-start; }
   .downloads-grid    { grid-template-columns: repeat(2,1fr); }
