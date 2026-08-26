@@ -187,13 +187,13 @@
     <div class="showcase reveal">
       <div class="showcase-photo">
         <img id="showcaseImg"
-               src="assets/Images/images%20telephone/Trace_tes_parcours_et_tes_routes.jpeg"
-                 alt="Trace tes routes">
+               src="assets/Images/images%20telephone/Affiche_tes_données_NMEA.jpeg"
+                 alt="Personnalise l'affichage">
       </div>
       <div class="showcase-info">
-        <span class="feature-tag" id="showcaseTag">Navigation</span>
-        <h3 id="showcaseTitle">Trace tes routes</h3>
-        <p id="showcaseDesc">Créez vos routes de navigation, posez des waypoints et suivez votre progression cap après cap sur la carte.</p>
+        <span class="feature-tag" id="showcaseTag">Instrumentation</span>
+        <h3 id="showcaseTitle">Personnalise ton affichage</h3>
+        <p id="showcaseDesc">Choisissez les données à afficher selon vos besoins : vitesse, cap, vent, profondeur et plus encore.</p>
         <div class="showcase-nav">
           <button class="gallery-btn" id="galleryPrev" aria-label="Fonctionnalité précédente">&#8592;</button>
           <button class="gallery-btn" id="galleryNext" aria-label="Fonctionnalité suivante">&#8594;</button>
@@ -204,7 +204,17 @@
     <!-- Bande de miniatures (défilement horizontal) -->
     <div class="features-strip" id="featuresStrip">
 
+
       <button class="feature-thumb active"
+          data-src="assets/Images/images%20telephone/Affiche_tes_données_NMEA.jpeg"
+          data-title="Personnalise ton affichage"
+          data-tag="Instrumentation"
+          data-desc="Choisissez les données à afficher selon vos besoins : vitesse, cap, vent, profondeur et plus encore.">
+        <img src="assets/Images/images%20telephone/Affiche_tes_données_NMEA.jpeg" alt="Personnalise l'affichage" loading="lazy">
+        <span>Données</span>
+      </button>
+
+      <button class="feature-thumb"
           data-src="assets/Images/images%20telephone/Trace_tes_parcours_et_tes_routes.jpeg"
           data-title="Trace tes routes"
           data-tag="Navigation"
@@ -214,68 +224,87 @@
       </button>
 
       <button class="feature-thumb"
-          data-src="assets/Images/images%20telephone/Active_tes_alarmes_AIS.jpeg"
-              data-title="Alarmes AIS"
-              data-tag="AIS"
-              data-desc="Suivez le trafic environnant et configurez des alarmes sur les navires présentant un risque de collision.">
-        <img src="assets/Images/images%20telephone/Active_tes_alarmes_AIS.jpeg" alt="Alarmes AIS" loading="lazy">
-        <span>Alarmes AIS</span>
+          data-src="assets/Images/images%20telephone/Affiche_la_carto.jpeg"
+          data-title="Cartographie"
+          data-tag="Carto"
+          data-desc="Affichez la carte, les fonds et les positions GPS en temps réel pour naviguer sereinement.">
+        <img src="assets/Images/images%20telephone/Affiche_la_carto.jpeg" alt="Affiche la carto" loading="lazy">
+        <span>Carto</span>
+      </button>
+
+      <button class="feature-thumb"
+          data-src="assets/Images/images%20telephone/Visualise_les_cibles_AIS.jpg"
+          data-title="Cibles AIS"
+          data-tag="AIS"
+          data-desc="Visualisez les cibles AIS proches et configurez des alertes sur les contacts à risque.">
+        <img src="assets/Images/images%20telephone/Visualise_les_cibles_AIS.jpg" alt="Visualise les cibles AIS" loading="lazy">
+        <span>Cibles AIS</span>
+      </button>
+
+      <button class="feature-thumb"
+          data-src="assets/Images/images%20telephone/Télécharge_et_visualise_la_météo.jpeg"
+          data-title="Télécharge la météo"
+          data-tag="Météo"
+          data-desc="Téléchargez et affichez des fichiers météo — vent, rafales, vagues — pour planifier vos sorties.">
+        <img src="assets/Images/images%20telephone/Télécharge_et_visualise_la_météo.jpeg" alt="Télécharge la météo" loading="lazy">
+        <span>Météo</span>
       </button>
 
       <button class="feature-thumb"
           data-src="assets/Images/images%20telephone/Active_ton_alarme_de_mouillage.jpeg"
-              data-title="Alarmes mouillage &amp; plus encore!"
-              data-tag="Alarmes"
-              data-desc="Alarme de dérapage au mouillage, alarmes de profondeur, alarmes AIS, alarmes de vent avec seuil configurable pour naviguer sereinement.">
+          data-title="Alarmes mouillage"
+          data-tag="Alarmes"
+          data-desc="Alarme de dérapage au mouillage et alertes configurables pour rester en sécurité au mouillage.">
         <img src="assets/Images/images%20telephone/Active_ton_alarme_de_mouillage.jpeg" alt="Alarmes mouillage" loading="lazy">
         <span>Alarmes mouillage</span>
       </button>
 
       <button class="feature-thumb"
-          data-src="assets/Images/images%20telephone/Télécharge_et_visualise_la_météo.jpeg"
-              data-title="Télécharge la météo"
-              data-tag="Météo"
-              data-desc="Téléchargez et affichez des fichiers météo GRIB — vent, rafales, vagues — et pouvoir les consulter même hors connexion.">
-        <img src="assets/Images/images%20telephone/Télécharge_et_visualise_la_météo.jpeg" alt="Télécharge la météo" loading="lazy">
-        <span>Météo GRIB</span>
+          data-src="assets/Images/images%20telephone/Visualise_ta_dérive_sur_la_carte.jpeg"
+          data-title="Suivi de dérive"
+          data-tag="Sécurité"
+          data-desc="Suivi de la dérive de l'ancre pour détecter tout déplacement indésirable du bateau.">
+        <img src="assets/Images/images%20telephone/Visualise_ta_dérive_sur_la_carte.jpeg" alt="Suivi de dérive" loading="lazy">
+        <span>Dérive ancre</span>
       </button>
 
       <button class="feature-thumb"
-          data-src="assets/Images/images%20telephone/Analyse_ta_data.jpeg"
-              data-title="Routage GRIB"
-              data-tag="Routage"
-              data-desc="Calculez des routes optimisées depuis les fichiers météo GRIB : profitez des meilleures fenêtres de vent.">
-        <img src="assets/Images/images%20telephone/Analyse_ta_data.jpeg" alt="Routage GRIB" loading="lazy">
-        <span>Routage GRIB</span>
-      </button>
-
-      <button class="feature-thumb"
-          data-src="assets/Images/images%20telephone/Lance_ton_timer_de_régate.jpeg"
-              data-title="Compte à rebours régate"
-              data-tag="Régate"
-              data-desc="Chronomètre de départ pour la régate, avec toutes les procéduresde départ classiques accessibles en deux clics.">
-        <img src="assets/Images/images%20telephone/Lance_ton_timer_de_régate.jpeg" alt="Compte à rebours régate" loading="lazy">
-        <span>Régate</span>
-      </button>
-
-      <button class="feature-thumb"
-          data-src="assets/Images/images%20telephone/Affiche_tes_données_NMEA.jpeg"
-              data-title="Personnalise ton affichage"
-              data-tag="Instrumentation"
-              data-desc="Choisissez les données à afficher selon vos besoins : vitesse, cap, vent, profondeur et plus encore.">
-        <img src="assets/Images/images%20telephone/Affiche_tes_données_NMEA.jpeg" alt="Personnalise l'affichage" loading="lazy">
-        <span>Données</span>
+          data-src="assets/Images/images%20telephone/Active_tes_alarmes_AIS.jpeg"
+          data-title="Alarmes AIS"
+          data-tag="AIS"
+          data-desc="Suivez le trafic environnant et configurez des alarmes sur les navires présentant un risque de collision.">
+        <img src="assets/Images/images%20telephone/Active_tes_alarmes_AIS.jpeg" alt="Alarmes AIS" loading="lazy">
+        <span>Alarmes AIS</span>
       </button>
 
       <button class="feature-thumb"
           data-src="assets/Images/images%20telephone/Affiche_tes_statistiques_de_session.jpeg"
-              data-title="Historique de session"
-              data-tag="Historique"
-              data-desc="Chaque session est enregistrée à la demande. Revenez sur vos trajectoires et analysez vos données.">
+          data-title="Historique de navigation"
+          data-tag="Historique"
+          data-desc="Chaque session est enregistrée : revivez vos parcours et analysez vos performances.">
         <img src="assets/Images/images%20telephone/Affiche_tes_statistiques_de_session.jpeg" alt="Historique de session" loading="lazy">
         <span>Historique</span>
       </button>
 
+      <button class="feature-thumb"
+          data-src="assets/Images/images%20telephone/Analyse_tes_perfs_avec_tes_polaires.jpeg"
+          data-title="Polaires du voilier"
+          data-tag="Performance"
+          data-desc="Importez les polaires de votre voilier pour analyser vos performances et optimiser vos réglages.">
+        <img src="assets/Images/images%20telephone/Analyse_tes_perfs_avec_tes_polaires.jpeg" alt="Polaires du voilier" loading="lazy">
+        <span>Polaires</span>
+      </button>
+
+      <button class="feature-thumb"
+          data-src="assets/Images/images%20telephone/Analyse_ta_data.jpeg"
+          data-title="Analyse des données"
+          data-tag="Analyse"
+          data-desc="Analysez les données du bord et les fichiers météo pour extraire des insights et générer des recommandations.">
+        <img src="assets/Images/images%20telephone/Analyse_ta_data.jpeg" alt="Analyse des données" loading="lazy">
+        <span>Analyse</span>
+      </button>
+
+      <!-- Remaining thumbnails kept afterwards -->
       <button class="feature-thumb"
           data-src="assets/Images/images%20telephone/Mode_sombre_pour_tes_navs_de_nuit.jpeg"
               data-title="Affichage de nuit"
@@ -286,12 +315,30 @@
       </button>
 
       <button class="feature-thumb"
-          data-src="assets/Images/images%20telephone/Analyse_tes_perfs_avec_tes_polaires.jpeg"
-              data-title="Polaires du voilier"
-              data-tag="Performance"
-              data-desc="Importez les polaires de votre voilier pour analyser vos performances réelles et optimiser vos réglages de voiles.">
-        <img src="assets/Images/images%20telephone/Analyse_tes_perfs_avec_tes_polaires.jpeg" alt="Polaires du voilier" loading="lazy">
-        <span>Polaires</span>
+          data-src="assets/Images/images%20telephone/Lance_ton_timer_de_régate.jpeg"
+              data-title="Compte à rebours régate"
+              data-tag="Régate"
+              data-desc="Chronomètre de départ pour la régate, avec toutes les procédures de départ classiques accessibles en deux clics.">
+        <img src="assets/Images/images%20telephone/Lance_ton_timer_de_régate.jpeg" alt="Compte à rebours régate" loading="lazy">
+        <span>Régate</span>
+      </button>
+
+      <button class="feature-thumb"
+          data-src="assets/Images/images%20telephone/Affiche_la_carto.jpeg"
+          data-title="Cartographie"
+          data-tag="Carto"
+          data-desc="Affichez la carte, les fonds et les positions GPS en temps réel pour naviguer sereinement.">
+        <img src="assets/Images/images%20telephone/Affiche_la_carto.jpeg" alt="Affiche la carto" loading="lazy">
+        <span>Carto</span>
+      </button>
+
+      <button class="feature-thumb"
+          data-src="assets/Images/images%20telephone/Réveille_toi_pour ta_prise_de_quart.jpeg"
+          data-title="Réveil quart"
+          data-tag="Sécurité"
+          data-desc="Paramétrez un réveil pour vos prises de quart afin de rester attentif pendant la nuit.">
+        <img src="assets/Images/images%20telephone/Réveille_toi_pour ta_prise_de_quart.jpeg" alt="Réveil prise de quart" loading="lazy">
+        <span>Réveil</span>
       </button>
 
       <button class="feature-thumb"
