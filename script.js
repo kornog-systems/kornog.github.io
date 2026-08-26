@@ -74,6 +74,43 @@ if (thumbs.length && showcaseImg) {
   thumbs.forEach((th, i) => th.addEventListener('click', () => activateFeature(i)));
   btnPrev?.addEventListener('click', () => activateFeature(current - 1));
   btnNext?.addEventListener('click', () => activateFeature(current + 1));
+
+  // Swipe support for touch devices on the thumbnails strip and showcase image
+  const featuresStrip = document.getElementById('featuresStrip');
+  let touchStartX = 0, touchStartY = 0, touchEndX = 0, touchEndY = 0;
+
+  function handleTouchStart(e) {
+    const t = e.touches ? e.touches[0] : e;
+    touchStartX = t.clientX; touchStartY = t.clientY;
+    touchEndX = touchStartX; touchEndY = touchStartY;
+  }
+
+  function handleTouchMove(e) {
+    const t = e.touches ? e.touches[0] : e;
+    touchEndX = t.clientX; touchEndY = t.clientY;
+  }
+
+  function handleTouchEnd() {
+    const dx = touchEndX - touchStartX;
+    const dy = touchEndY - touchStartY;
+    const absDx = Math.abs(dx);
+    const absDy = Math.abs(dy);
+    const threshold = 40; // px
+    if (absDx > threshold && absDx > absDy) {
+      if (dx < 0) activateFeature(current + 1);
+      else activateFeature(current - 1);
+    }
+    touchStartX = touchStartY = touchEndX = touchEndY = 0;
+  }
+
+  // attach handlers to both the thumbnails strip and the showcase image
+  featuresStrip?.addEventListener('touchstart', handleTouchStart, { passive: true });
+  featuresStrip?.addEventListener('touchmove', handleTouchMove, { passive: true });
+  featuresStrip?.addEventListener('touchend', handleTouchEnd);
+
+  showcaseImg.addEventListener('touchstart', handleTouchStart, { passive: true });
+  showcaseImg.addEventListener('touchmove', handleTouchMove, { passive: true });
+  showcaseImg.addEventListener('touchend', handleTouchEnd);
 }
 
 /* ── Formulaire de contact (mailto fallback) ── */

@@ -320,6 +320,7 @@ nav a:hover { color: var(--text); background: var(--gray-50); }
   display: flex;
   gap: .75rem;
   overflow-x: auto;
+  scroll-snap-type: x mandatory;
   padding: .5rem 0 1rem;
   scrollbar-width: none;
   margin-bottom: .5rem;
@@ -338,6 +339,7 @@ nav a:hover { color: var(--text); background: var(--gray-50); }
   cursor: pointer;
   background: none;
   transition: border-color var(--transition), background var(--transition);
+  scroll-snap-align: center;
 }
 .feature-thumb img {
   width: 56px;
