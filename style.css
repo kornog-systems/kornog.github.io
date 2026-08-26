@@ -29,7 +29,7 @@
   --shadow-md:     0 4px 18px rgba(10,30,60,.09);
   --shadow-lg:     0 12px 40px rgba(10,30,60,.13);
   --transition:    .2s ease;
-  --container:     1100px;
+  --container:     clamp(800px, 94vw, 1400px);
   --header-h:      68px;
 }
 
@@ -65,7 +65,9 @@ p  { line-height: 1.7; }
 .container {
   max-width: var(--container);
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 1rem; /* reduced side padding for better use of screen width */
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .section       { padding: 5rem 0; }
